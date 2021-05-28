@@ -20,6 +20,9 @@ function App() {
                 <Route path={"/contact"} exact>
                     Contact
                 </Route>
+                <Route path={"/cart"} exact>
+                    Cart
+                </Route>
             </Switch>
         </BrowserRouter>
     );
