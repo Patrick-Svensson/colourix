@@ -1,7 +1,6 @@
 import { useState, useEffect } from "react";
 import { BrowserRouter, Switch, Router, Route } from "react-router-dom";
 import Cart from "./Pages/Cart";
-import Colouritem from "./Pages/Colouritem";
 import Colours from "./Pages/Colours";
 import Contact from "./Pages/Contact";
 import Home from "./Pages/Home";
@@ -12,16 +11,16 @@ function App() {
         <BrowserRouter>
             <Switch>
                 <Route path={"/"} exact>
-                    Home
+                    {Home}
                 </Route>
                 <Route path={"/colours"} exact>
-                    Colours
+                    {Colours}
                 </Route>
                 <Route path={"/contact"} exact>
-                    Contact
+                    {Contact}
                 </Route>
                 <Route path={"/cart"} exact>
-                    Cart
+                    {Cart}
                 </Route>
             </Switch>
         </BrowserRouter>
