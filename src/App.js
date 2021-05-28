@@ -1,4 +1,3 @@
-import { useState, useEffect } from "react";
 import { BrowserRouter, Switch, Router, Route } from "react-router-dom";
 import Cart from "./Pages/Cart";
 import Colours from "./Pages/Colours";
