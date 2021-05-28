@@ -18,6 +18,8 @@ function App() {
                 <Route path={"/contact"} exact>
                     {Contact}
                 </Route>
+            </Switch>
+            <Switch>
                 <Route path={"/cart"} exact>
                     {Cart}
                 </Route>
