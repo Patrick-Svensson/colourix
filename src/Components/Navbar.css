@@ -1,0 +1,51 @@
+.navBar {
+    width: 100vw;
+    display: flex;
+}
+
+.logoContainer {
+    width: 30%;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    background-color: #f1f1f1;
+}
+
+.navLinkContainer {
+    width: 70%;
+    height: 10vh;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: blanchedalmond;
+}
+
+.navLink {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    height: 100%;
+    color: #070707;
+    font-size: 2rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+}
+
+.homeLink {
+    background-color: #eb8d8d;
+}
+
+.coloursLink {
+    background-color: #9aeb8d;
+}
+
+.contactLink {
+    background-color: #8da2eb;
+}
+
+.cartLink {
+    width: 10%;
+    background-color: #eecc51;
+}

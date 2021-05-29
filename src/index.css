@@ -43,6 +43,7 @@ body {
     height: 95.8vh;
     text-rendering: optimizeSpeed;
     font-family: "Kanit", sans-serif;
+    color: #070707;
 }
 
 /* A elements that don't have a class get default styles */

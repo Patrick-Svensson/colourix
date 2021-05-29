@@ -1,13 +1,16 @@
-import { BrowserRouter, Switch, Router, Route } from "react-router-dom";
+import { BrowserRouter, Switch, Route } from "react-router-dom";
 import Cart from "./Pages/Cart";
 import Colours from "./Pages/Colours";
 import Contact from "./Pages/Contact";
 import Home from "./Pages/Home";
+import Navbar from "./Components/Navbar";
+import "./Components/Navbar.css";
 import "./App.css";
 
 function App() {
     return (
         <BrowserRouter>
+            <Navbar />
             <Switch>
                 <Route path={"/"} exact>
                     {Home}
@@ -18,8 +21,6 @@ function App() {
                 <Route path={"/contact"} exact>
                     {Contact}
                 </Route>
-            </Switch>
-            <Switch>
                 <Route path={"/cart"} exact>
                     {Cart}
                 </Route>
