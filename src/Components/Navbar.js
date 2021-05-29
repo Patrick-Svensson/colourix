@@ -6,21 +6,21 @@ const Navbar = () => {
     return (
         <div className="navBar">
             <div className="logoContainer">
-                <NavLink exact to="/">
-                    <ReactLogo />
+                <NavLink className="logoLink" exact to="/">
+                    <ReactLogo className="logo" />
                 </NavLink>
             </div>
             <div className="navLinkContainer">
-                <NavLink className="navLink homeLink" exact to="/">
+                <NavLink className="navLink homeLink" activeClassName="activeHomeLink" exact to="/">
                     Home
                 </NavLink>
-                <NavLink className="navLink coloursLink" exact to="/colours">
+                <NavLink className="navLink coloursLink" activeClassName="activeColoursLink" exact to="/colours">
                     Colours
                 </NavLink>
-                <NavLink className="navLink contactLink" exact to="/contact">
+                <NavLink className="navLink contactLink" activeClassName="activeContactLink" exact to="/contact">
                     Contact
                 </NavLink>
-                <NavLink className="navLink cartLink" exact to="/cart">
+                <NavLink className="navLink cartLink" activeClassName="activeCartLink" exact to="/cart">
                     <BiCart />
                 </NavLink>
             </div>

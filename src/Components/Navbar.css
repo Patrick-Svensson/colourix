@@ -1,19 +1,43 @@
 .navBar {
     width: 100vw;
+    height: 10vh;
     display: flex;
 }
 
 .logoContainer {
     width: 35%;
-    height: 10vh;
+    height: 100%;
     display: flex;
     align-items: center;
     background-color: #f1f1f1;
 }
 
+.logo {
+    -webkit-transform: scale(0.9);
+    -moz-transform: scale(0.9);
+    -o-transform: scale(0.9);
+    transform: scale(0.9);
+    padding-left: 1rem;
+}
+
+.logoLink:hover,
+focus {
+    -webkit-transform: scale(1.02);
+    -moz-transform: scale(1.02);
+    -o-transform: scale(1.02);
+    transform: scale(1.02);
+}
+
+.logoLink:active {
+    -webkit-transform: scale(0.99);
+    -moz-transform: scale(0.99);
+    -o-transform: scale(0.99);
+    transform: scale(0.99);
+}
+
 .navLinkContainer {
     width: 65%;
-    height: 10vh;
+    height: 100%;
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -24,7 +48,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 30%;
+    width: 29%;
     height: 100%;
     color: #070707;
     font-size: 2rem;
@@ -37,16 +61,99 @@
     background-color: #eb8d8d;
 }
 
+.homeLink:hover,
+focus {
+    background-color: #d67272;
+}
+
+.activeHomeLink {
+    border: 0.2rem solid #7e3030;
+}
+
 .coloursLink {
     background-color: #9aeb8d;
+}
+
+.coloursLink:hover,
+focus {
+    background-color: #79c76d;
+}
+
+.activeColoursLink {
+    border: 0.2rem solid #34752a;
 }
 
 .contactLink {
     background-color: #8da2eb;
 }
 
+.contactLink:hover,
+focus {
+    background-color: #6e82c9;
+}
+
+.activeContactLink {
+    border: 0.2rem solid #3f4f8a;
+}
+
 .cartLink {
-    width: 10%;
+    width: 13%;
     background-color: #eecc51;
     font-size: 3rem;
+}
+
+.cartLink:hover,
+focus {
+    background-color: #cfaf3a;
+}
+
+.activeCartLink {
+    border: 0.2rem solid #997f22;
+}
+
+.navLink:active {
+    font-size: 1.9rem;
+}
+
+.cartLink:active {
+    font-size: 2.6rem;
+}
+
+@media screen and (max-width: 75rem) {
+    .navBar {
+        height: 8vh;
+    }
+
+    .navLink {
+        font-size: 1.2rem;
+        letter-spacing: 0;
+    }
+
+    .logoContainer {
+        width: 40%;
+    }
+
+    .logo {
+        -webkit-transform: scale(0.7);
+        -moz-transform: scale(0.7);
+        -o-transform: scale(0.7);
+        transform: scale(0.7);
+        padding: 0;
+    }
+
+    .navLinkContainer {
+        width: 60%;
+    }
+
+    .cartLink {
+        font-size: 2rem;
+    }
+
+    .navLink:active {
+        font-size: 1.1rem;
+    }
+
+    .cartLink:active {
+        font-size: 1.6rem;
+    }
 }
