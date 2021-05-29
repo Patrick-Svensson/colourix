@@ -1,5 +1,11 @@
+import Colouritem from "./Colouritem";
+
 const Colours = () => {
-    return <div>Colour product page</div>;
+    return (
+        <>
+            <Colouritem />
+        </>
+    );
 };
 
 export default Colours;

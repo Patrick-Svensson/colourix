@@ -1,0 +1,11 @@
+.productTitle {
+    text-transform: capitalize;
+    font-weight: 400;
+}
+
+.productImg {
+    width: 6rem;
+    height: 6rem;
+    border: 1px dotted #333;
+    border-radius: 1rem;
+}

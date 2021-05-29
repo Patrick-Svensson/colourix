@@ -1,5 +1,11 @@
+import ColourComponent from "../Components/ColourComponent";
+
 const Colouritem = () => {
-    return <div>Colour item page</div>;
+    return (
+        <>
+            <ColourComponent />
+        </>
+    );
 };
 
 export default Colouritem;
