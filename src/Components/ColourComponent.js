@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import { colourData } from "./colourData";
 import Button from "./Button";
 
@@ -25,7 +26,9 @@ const ColourComponent = () => {
                     <p>€ {item.price}</p>
                 </div>
             </div>
-            <Button style={styles} text="View Colour" />
+            <Link to="/colouritem">
+                <Button style={styles} text="View Colour" />
+            </Link>
         </div>
     ));
 

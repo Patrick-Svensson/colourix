@@ -1,4 +1,4 @@
-import ColourItem from "./ColourItem";
+import ColourComponent from "../Components/ColourComponent";
 import "./Colours.css";
 
 const Colours = () => {
@@ -6,7 +6,7 @@ const Colours = () => {
         <main className="coloursContainer">
             <h2 className="coloursHeading">Premium Colours</h2>
             <div className="productContainer">
-                <ColourItem />
+                <ColourComponent />
             </div>
         </main>
     );
