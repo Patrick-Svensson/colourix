@@ -1,11 +1,32 @@
+.colourItemContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem;
+    width: 100%;
+    max-width: 31.25rem;
+    height: auto;
+    border: 1px solid green;
+}
+
+.dataContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.unitsContainer {
+    display: flex;
+    justify-content: space-around;
+}
+
 .productTitle {
     text-transform: capitalize;
     font-weight: 400;
 }
 
 .productImg {
-    width: 6rem;
-    height: 6rem;
+    width: 4rem;
+    height: 4rem;
     border: 1px dotted #333;
     border-radius: 1rem;
 }
