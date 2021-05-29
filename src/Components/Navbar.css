@@ -4,7 +4,7 @@
 }
 
 .logoContainer {
-    width: 30%;
+    width: 35%;
     height: 10vh;
     display: flex;
     align-items: center;
@@ -12,7 +12,7 @@
 }
 
 .navLinkContainer {
-    width: 70%;
+    width: 65%;
     height: 10vh;
     display: flex;
     justify-content: flex-end;
@@ -48,4 +48,5 @@
 .cartLink {
     width: 10%;
     background-color: #eecc51;
+    font-size: 3rem;
 }

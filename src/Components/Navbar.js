@@ -1,11 +1,13 @@
 import { NavLink } from "react-router-dom";
+import { BiCart } from "react-icons/bi";
+import { ReactComponent as ReactLogo } from "./ColourixLogo.svg";
 
 const Navbar = () => {
     return (
         <div className="navBar">
             <div className="logoContainer">
                 <NavLink exact to="/">
-                    Logo
+                    <ReactLogo />
                 </NavLink>
             </div>
             <div className="navLinkContainer">
@@ -19,7 +21,7 @@ const Navbar = () => {
                     Contact
                 </NavLink>
                 <NavLink className="navLink cartLink" exact to="/cart">
-                    Cart
+                    <BiCart />
                 </NavLink>
             </div>
         </div>
