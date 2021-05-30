@@ -4,19 +4,28 @@ import Colours from "./Pages/Colours";
 //import ColourItem from "./Pages/ColourItem";
 import Contact from "./Pages/Contact";
 import Home from "./Pages/Home";
+import Navbar from "./Components/Navbar";
+import "./Components/Navbar.css";
 import "./App.css";
 
 function App() {
     return (
         <BrowserRouter>
+            <Navbar />
             <Switch>
-                <Route path="/" exact component={Home}></Route>
-                <Route path="/colours" exact component={Colours}></Route>
-                <Route path="/contact" exact component={Contact}></Route>
-                {/* <Route path="/colouritem" exact component={ColourItem}></Route> */}
-            </Switch>
-            <Switch>
-                <Route path="/cart" exact component={Cart}></Route>
+
+                <Route path={"/"} exact>
+                    {Home}
+                </Route>
+                <Route path={"/colours"} exact>
+                    {Colours}
+                </Route>
+                <Route path={"/contact"} exact>
+                    {Contact}
+                </Route>
+                <Route path={"/cart"} exact>
+                    {Cart}
+                </Route>
             </Switch>
         </BrowserRouter>
     );
