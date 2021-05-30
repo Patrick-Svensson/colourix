@@ -1,34 +1,32 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
 import { colourData } from "./colourData";
 import Button from "./Button";
 
 import "./ColourComponent.css";
 
 const ColourComponent = () => {
-    const [items, setItems] = useState(colourData);
+    const [colours, setColours] = useState(colourData);
 
     const styles = {
         backgroundColor: "#8DA2EB",
     };
 
-    const productItem = items.map((item) => (
-        <div key={item.id} className="colourItemContainer">
+    const productItem = colours.map((el) => (
+        <div key={el.id} className="colourItemContainer">
             <div
                 className="productImg"
-                style={{ background: "#" + item.product }}
+                style={{ background: "#" + el.product }}
             ></div>
             <div className="dataContainer">
-                <h3 className="productTitle">{item.name}</h3>
+                <h3 className="productTitle">{el.name}</h3>
 
                 <div className="unitsContainer">
-                    <p>{item.volume} ml</p>
-                    <p>€ {item.price}</p>
+                    <p>{el.volume} ml</p>
+                    <p>€ {el.price}</p>
                 </div>
             </div>
-            <Link to="/colouritem">
-                <Button style={styles} text="View Colour" />
-            </Link>
+
+            <Button style={styles} text="View Colour" />
         </div>
     ));
 
