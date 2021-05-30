@@ -1,25 +1,24 @@
-import { Link } from "react-router-dom";
 import { FaPinterestSquare, FaFacebookSquare, FaTwitterSquare, FaInstagramSquare, FaYoutubeSquare } from "react-icons/fa";
 
 const Footer = () => {
     return (
         <footer className="footer">
             <div className="footerLinkContainer">
-                <Link>
+                <a href="https://www.pinterest.ca/">
                     <FaPinterestSquare className="footerLink" />
-                </Link>
-                <Link>
+                </a>
+                <a href="https://sv-se.facebook.com/">
                     <FaFacebookSquare className="footerLink" />
-                </Link>
-                <Link>
+                </a>
+                <a href="https://twitter.com/?lang=sv">
                     <FaTwitterSquare className="footerLink" />
-                </Link>
-                <Link>
+                </a>
+                <a href="https://www.instagram.com/">
                     <FaInstagramSquare className="footerLink" />
-                </Link>
-                <Link>
+                </a>
+                <a href="https://www.youtube.com/">
                     <FaYoutubeSquare className="footerLink" />
-                </Link>
+                </a>
             </div>
         </footer>
     );
