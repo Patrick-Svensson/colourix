@@ -3,13 +3,7 @@
     flex-direction: column;
     justify-content: center;
     width: 90%;
+    max-width: 56.25rem;
     min-height: 80vmin;
     margin: auto;
-}
-
-.productContainer {
-    display: flex;
-    align-self: center;
-    justify-self: center;
-    width: 80%;
 }
