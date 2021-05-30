@@ -1,5 +1,11 @@
+import Title from "../Components/Title";
+
 const Cart = () => {
-    return <div>Cart page</div>;
+    return (
+        <div>
+            <Title title="My Cart" />
+        </div>
+    );
 };
 
 export default Cart;
