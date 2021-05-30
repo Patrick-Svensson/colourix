@@ -4,21 +4,21 @@ import { FaPinterestSquare, FaFacebookSquare, FaTwitterSquare, FaInstagramSquare
 const Footer = () => {
     return (
         <footer className="footer">
-            <div className="mediaLinkContainer">
+            <div className="footerLinkContainer">
                 <Link>
-                    <FaPinterestSquare />
+                    <FaPinterestSquare className="footerLink" />
                 </Link>
                 <Link>
-                    <FaFacebookSquare />
+                    <FaFacebookSquare className="footerLink" />
                 </Link>
                 <Link>
-                    <FaTwitterSquare />
+                    <FaTwitterSquare className="footerLink" />
                 </Link>
                 <Link>
-                    <FaInstagramSquare />
+                    <FaInstagramSquare className="footerLink" />
                 </Link>
                 <Link>
-                    <FaYoutubeSquare />
+                    <FaYoutubeSquare className="footerLink" />
                 </Link>
             </div>
         </footer>

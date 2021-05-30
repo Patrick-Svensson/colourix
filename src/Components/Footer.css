@@ -10,9 +10,20 @@
     left: 0;
 }
 
-.mediaLinkContainer {
-    width: 40%;
+.footerLinkContainer {
+    width: 75%;
+    max-width: 40rem;
     height: auto;
     display: flex;
     justify-content: space-between;
+}
+
+.footerLink {
+    fill: #f1f1f1;
+    font-size: 1.6rem;
+}
+
+.footerLink:hover,
+focus {
+    fill: #eb8d8d;
 }
