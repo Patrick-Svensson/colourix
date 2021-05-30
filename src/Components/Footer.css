@@ -1,0 +1,18 @@
+.footer {
+    width: 100vw;
+    height: 7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #454d93;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.mediaLinkContainer {
+    width: 40%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+}

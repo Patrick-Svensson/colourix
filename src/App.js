@@ -5,6 +5,8 @@ import Colours from "./Pages/Colours";
 import Contact from "./Pages/Contact";
 import Home from "./Pages/Home";
 import Navbar from "./Components/Navbar";
+import Footer from "./Components/Footer";
+import "./Components/Footer.css";
 import "./Components/Navbar.css";
 import "./App.css";
 
@@ -26,6 +28,7 @@ function App() {
                     {Cart}
                 </Route>
             </Switch>
+            <Footer />
         </BrowserRouter>
     );
 }
