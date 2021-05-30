@@ -40,10 +40,12 @@ html:focus-within {
 body {
     overflow: hidden;
     position: relative;
-    height: 95.8vh;
+    min-height: 100vh;
     text-rendering: optimizeSpeed;
     font-family: "Kanit", sans-serif;
     color: #070707;
+    background: linear-gradient(120deg, #fcfcfc 33%, rgba(0, 0, 0, 0) 33%),
+        linear-gradient(120deg, #f6f6f6 66%, #e5e5e5 66%);
 }
 
 /* A elements that don't have a class get default styles */

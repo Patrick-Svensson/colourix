@@ -1,5 +1,12 @@
-const Colouritem = () => {
-    return <div>Colour item page</div>;
+import ColourComponent from "../Components/ColourComponent";
+import "./ColourItem.css";
+
+const ColourItem = () => {
+    return (
+        <div className="componentContainer">
+            <ColourComponent />
+        </div>
+    );
 };
 
-export default Colouritem;
+export default ColourItem;

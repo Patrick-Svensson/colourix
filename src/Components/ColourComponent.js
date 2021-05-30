@@ -1,44 +1,36 @@
-export const ColourItems = [
-    {
-        id: 1,
-        name: "currant red",
-        product: "DA0808",
-        price: 24.85,
-        volume: 50,
-    },
-    {
-        id: 2,
-        name: "forrest",
-        product: "1D8133",
-        price: 24.85,
-        volume: 50,
-    },
-    {
-        id: 3,
-        name: "yellow bronze",
-        product: "C69536",
-        price: 33.65,
-        volume: 50,
-    },
-    {
-        id: 4,
-        name: "ocean blue",
-        product: "0869DA",
-        price: 33.65,
-        volume: 50,
-    },
-    {
-        id: 5,
-        name: "bougainvillea",
-        product: "802DC1",
-        price: 21.95,
-        volume: 50,
-    },
-    {
-        id: 6,
-        name: "bright topaz",
-        product: "F3EE67",
-        price: 24.85,
-        volume: 50,
-    },
-];
+import { useState } from "react";
+import { colourData } from "./colourData";
+import Button from "./Button";
+
+import "./ColourComponent.css";
+
+const ColourComponent = () => {
+    const [colours, setColours] = useState(colourData);
+
+    const styles = {
+        backgroundColor: "#8DA2EB",
+    };
+
+    const productItem = colours.map((el) => (
+        <div key={el.id} className="colourItemContainer">
+            <div
+                className="productImg"
+                style={{ background: "#" + el.product }}
+            ></div>
+            <div className="dataContainer">
+                <h3 className="productTitle">{el.name}</h3>
+
+                <div className="unitsContainer">
+                    <p>{el.volume} ml</p>
+                    <p>€ {el.price}</p>
+                </div>
+            </div>
+
+            <Button style={styles} text="View Colour" />
+        </div>
+    ));
+
+    return <div>{productItem}</div>;
+};
+
+export default ColourComponent;
