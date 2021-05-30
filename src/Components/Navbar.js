@@ -16,13 +16,25 @@ const Navbar = () => {
                 </NavLink>
             </div>
             <div className={sidebar ? "navLinkContainer active" : "navLinkContainer"}>
-                <NavLink className="navLink homeLink" activeClassName="activeHomeLink" exact to="/">
+                <NavLink className="navLink homeLink" activeClassName="activeHomeLink" exact to="/" onClick={showSidebar}>
                     Home
                 </NavLink>
-                <NavLink className="navLink coloursLink" activeClassName="activeColoursLink" exact to="/colours">
+                <NavLink
+                    className="navLink coloursLink"
+                    activeClassName="activeColoursLink"
+                    exact
+                    to="/colours"
+                    onClick={showSidebar}
+                >
                     Colours
                 </NavLink>
-                <NavLink className="navLink contactLink" activeClassName="activeContactLink" exact to="/contact">
+                <NavLink
+                    className="navLink contactLink"
+                    activeClassName="activeContactLink"
+                    exact
+                    to="/contact"
+                    onClick={showSidebar}
+                >
                     Contact
                 </NavLink>
             </div>
