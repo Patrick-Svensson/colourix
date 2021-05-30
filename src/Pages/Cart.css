@@ -1,9 +1,9 @@
-.coloursContainer {
+.cartContainer {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 100%;
-    max-width: 66rem;
+    width: 90%;
+    max-width: 56.25rem;
     min-height: 80vmin;
     margin: auto;
 }

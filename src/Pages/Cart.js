@@ -1,10 +1,12 @@
 import Title from "../Components/Title";
+import "./Cart.css";
 
 const Cart = () => {
     return (
-        <div>
+        <main className="cartContainer">
             <Title title="My Cart" />
-        </div>
+            <div></div>
+        </main>
     );
 };
 

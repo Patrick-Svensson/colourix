@@ -1,6 +1,6 @@
 .coloursHeading {
     color: #070707;
-    font-size: 3rem;
+    font-size: clamp(2rem, 1.3333rem + 2.963vw, 3rem);
     font-weight: 400;
     text-transform: uppercase;
     font-style: italic;

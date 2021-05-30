@@ -25,12 +25,18 @@ const ColourComponent = () => {
                     <p>€ {el.price}</p>
                 </div>
             </div>
+            <select className="selectMenu">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+            </select>
 
             <Button style={styles} text="Add to cart" />
         </div>
     ));
 
-    return <div>{productItem}</div>;
+    return <>{productItem}</>;
 };
 
 export default ColourComponent;
