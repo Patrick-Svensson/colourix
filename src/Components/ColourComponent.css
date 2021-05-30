@@ -7,17 +7,18 @@
     padding: 0.6rem;
     width: 100%;
     height: auto;
-    /* border: 1px solid green; */
+    gap: 1rem;
 }
 
 .dataContainer {
-    width: 40%;
+    width: 60%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
 
 .unitsContainer {
+    width: 50%;
     display: flex;
     justify-content: space-around;
     gap: 1.4rem;
