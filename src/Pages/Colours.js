@@ -6,7 +6,7 @@ const Colours = () => {
     return (
         <main className="coloursContainer">
             <Title title="Premium Colours" />
-            <div>
+            <div className="componentContainer">
                 <ColourComponent />
             </div>
         </main>

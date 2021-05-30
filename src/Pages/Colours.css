@@ -4,6 +4,7 @@
     justify-content: center;
     width: 100%;
     max-width: 66rem;
-    min-height: 80vmin;
-    margin: auto;
+    min-height: 100vh;
+    margin: 5rem auto;
+    gap: 3rem;
 }
