@@ -1,7 +1,7 @@
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 import Cart from "./Pages/Cart";
 import Colours from "./Pages/Colours";
-import ColourItem from "./Pages/ColourItem";
+//import ColourItem from "./Pages/ColourItem";
 import Contact from "./Pages/Contact";
 import Home from "./Pages/Home";
 import Navbar from "./Components/Navbar";
@@ -13,6 +13,7 @@ function App() {
         <BrowserRouter>
             <Navbar />
             <Switch>
+
                 <Route path={"/"} exact>
                     {Home}
                 </Route>
