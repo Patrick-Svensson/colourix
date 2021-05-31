@@ -1,3 +1,4 @@
+import { useState } from "react";
 import ColourComponent from "../Components/ColourComponent";
 import Title from "../Components/Title";
 import "./Colours.css";

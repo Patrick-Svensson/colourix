@@ -1,4 +1,6 @@
+import { UseState } from "react";
 import Title from "../Components/Title";
+import ColourComponent from "../Components/ColourComponent";
 import "./Cart.css";
 
 const Cart = () => {
