@@ -12,24 +12,15 @@
     height: 60%;
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: 3rem;
+    overflow: scroll;
 }
 
 .homeHeader {
-    width: 50%;
+    width: 60%;
     height: 80%;
     display: flex;
     flex-direction: column;
     justify-content: center;
-}
-
-.trendColContainer {
-    width: 50%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: flex-end;
 }
 
 .homeHeading {
@@ -51,18 +42,53 @@
     letter-spacing: 0.02rem;
 }
 
+.homeAside {
+    width: 30rem;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.trendColContainer {
+    width: 100%;
+    height: 25rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-bottom: 3rem;
+}
+
 .trendColHeading {
     font-size: clamp(1.2rem, 0.9143rem + 1.4286vw, 2.2rem);
     text-transform: uppercase;
     letter-spacing: 0.02rem;
-    padding-bottom: 2rem;
+    padding-bottom: 3rem;
 }
 
 .trendColours {
-    width: 100%;
+    width: 85%;
     height: 80%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-end;
+}
+
+.trendColItemContainer {
+    width: 20rem;
+    margin: 0;
+}
+
+.trendColItemContainer:last-child {
+    align-self: flex-start;
+}
+
+.trendColUnitsContainer {
+    width: 100%;
+    justify-content: space-between;
+    /* padding-right: 3rem; */
+}
+
+Button {
+    margin-left: 12rem;
 }
