@@ -1,0 +1,51 @@
+.home {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.homeContentContainer {
+    width: 85%;
+    max-width: 75rem;
+    height: 60%;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: aquamarine;
+    margin-bottom: 3rem;
+}
+
+.homeHeader {
+    width: 50%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+}
+
+.trendingColours {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    background-color: bisque;
+}
+
+.homeHeaderHeading {
+    font-size: clamp(2.6rem, 2.2rem + 2vw, 4rem);
+    font-weight: 400;
+    font-style: italic;
+    text-transform: uppercase;
+    line-height: clamp(2.5rem, 2.2143rem + 1.4286vw, 3.5rem);
+    letter-spacing: 0.04rem;
+    padding-bottom: 2rem;
+}
+
+.homeHeaderSubHeading {
+    font-size: clamp(1.6rem, 1.3143rem + 1.4286vw, 2.6rem);
+    font-style: italic;
+    line-height: clamp(2.5rem, 2.2143rem + 1.4286vw, 3.5rem);
+    letter-spacing: 0.02rem;
+}

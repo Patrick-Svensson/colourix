@@ -5,7 +5,9 @@ import "./Colours.css";
 const Colours = () => {
     return (
         <main className="coloursContainer">
-            <Title title="Premium Colours" />
+            <div className="coloursTitleContainer">
+                <Title title="Premium Colours" className="coloursTitle" />
+            </div>
             <div className="componentContainer">
                 <ColourComponent />
             </div>
