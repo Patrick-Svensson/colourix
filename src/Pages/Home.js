@@ -1,15 +1,22 @@
+import TrendingColour from "../Components/TrendColours";
+
 const Home = () => {
     return (
         <div className="home">
             <div className="homeContentContainer">
                 <header className="homeHeader">
-                    <h1 className="homeHeaderHeading">premium colours</h1>
-                    <span className="homeHeaderSubHeading">Made exclusivly with</span>
-                    <span className="homeHeaderSubHeading">green components.</span>
-                    <span className="homeHeaderSubHeading">For the modern,</span>
-                    <span className="homeHeaderSubHeading">climate consious artist.</span>
+                    <h1 className="homeHeaderHeading homeHeading">premium colours</h1>
+                    <span className="homeHeaderSubHeading homeHeading">Made exclusivly with</span>
+                    <span className="homeHeaderSubHeading homeHeading">green components</span>
+                    <span className="homeHeaderSubHeading homeHeading">for the modern,</span>
+                    <span className="homeHeaderSubHeading homeHeading">climate consious artist.</span>
                 </header>
-                <aside className="trendingColours"></aside>
+                <aside className="trendColContainer">
+                    <h2 className="trendColHeading homeHeading">trending colours</h2>
+                    <div className="trendColours">
+                        <TrendingColour />
+                    </div>
+                </aside>
             </div>
         </div>
     );
