@@ -1,15 +1,19 @@
-import { UseState } from "react";
-import Title from "../Components/Title";
-import ColourComponent from "../Components/ColourComponent";
-import "./Cart.css";
+// import { useState } from "react";
+// import Title from "../Components/Title";
+// import Colours from "./Colours";
+// import ColourComponent from "../Components/ColourComponent";
+// import "./Cart.css";
 
-const Cart = () => {
-    return (
-        <main className="cartContainer">
-            <Title title="My Cart" />
-            <div></div>
-        </main>
-    );
-};
+// const Cart = () => {
+//     const [cartItem, setCartItem] = useState([]);
 
-export default Cart;
+//     return (
+//         <main className="cartContainer">
+//             <Title title="My Cart" />
+//             <ColourComponent addToCartItem={cartItem} />
+//             <div></div>
+//         </main>
+//     );
+// };
+
+// export default Cart;

@@ -5,6 +5,7 @@ export const colourData = [
         colour: "DA0808",
         price: 24.85,
         volume: 50,
+        qty: 0,
     },
     {
         id: 2,
@@ -12,6 +13,7 @@ export const colourData = [
         colour: "1D8133",
         price: 24.85,
         volume: 50,
+        qty: 0,
     },
     {
         id: 3,
@@ -19,6 +21,7 @@ export const colourData = [
         colour: "C69536",
         price: 33.65,
         volume: 50,
+        qty: 0,
     },
     {
         id: 4,
@@ -26,6 +29,7 @@ export const colourData = [
         colour: "0869DA",
         price: 33.65,
         volume: 50,
+        qty: 0,
     },
     {
         id: 5,
@@ -33,6 +37,7 @@ export const colourData = [
         colour: "802DC1",
         price: 21.95,
         volume: 50,
+        qty: 0,
     },
     {
         id: 6,
@@ -40,5 +45,6 @@ export const colourData = [
         colour: "F3EE67",
         price: 24.85,
         volume: 50,
+        qty: 0,
     },
 ];
