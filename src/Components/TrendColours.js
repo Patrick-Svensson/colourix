@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { colourData } from "./colourData";
 import Button from "./Button";
 import "./ColourComponent.css";
+import "./TrendColours.css";
 
 const TrendingColours = () => {
     const [colours, setColours] = useState(colourData);
@@ -24,7 +25,7 @@ const TrendingColours = () => {
                         <p>€ {el.price}</p>
                     </div>
                 </div>
-                <Link className="trendColButton" exact to="/colours">
+                <Link className="trendColButton" to="/colours">
                     <Button style={styles} text="view colours" />
                 </Link>
             </div>

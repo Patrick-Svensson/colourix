@@ -1,11 +1,11 @@
-import { Link } from "react-router-dom";
 import TrendingColour from "../Components/TrendColours";
+import Banner from "../Components/Banner";
 import "./Home.css";
 
 const Home = () => {
     return (
         <>
-            <div className="banner"></div>
+            <Banner />
             <div className="home">
                 <div className="homeContentContainer">
                     <header className="homeHeader">
@@ -22,8 +22,8 @@ const Home = () => {
                         </h1>
                     </header>
                     <aside className="homeAside">
-                        <h2 className="trendColHeading homeHeading">trending colours &#33;</h2>
-                        <div className="trendColours">
+                        <h2 className="homeColHeading homeHeading">trending colours &#33;</h2>
+                        <div className="homeColours">
                             <TrendingColour />
                         </div>
                     </aside>

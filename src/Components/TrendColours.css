@@ -1,0 +1,26 @@
+.trendColItemContainer {
+    width: 20rem;
+    margin: 0;
+}
+
+.trendColItemContainer:last-child {
+    align-self: flex-start;
+}
+
+.trendColUnitsContainer {
+    width: 100%;
+    justify-content: space-between;
+    /* padding-right: 3rem; */
+}
+
+.trendColButton {
+    margin-left: auto;
+}
+
+/* Screen breakpoint 544px */
+
+@media screen and (max-width: 34rem) {
+    .trendColItemContainer:last-child {
+        align-self: center;
+    }
+}
