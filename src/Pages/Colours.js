@@ -1,5 +1,6 @@
 import { useState } from "react";
 import ColourComponent from "../Components/ColourComponent";
+import CartItemsList from "../Components/CartItemsList";
 import Title from "../Components/Title";
 import "./Colours.css";
 
@@ -14,13 +15,10 @@ const Colours = () => {
         <main className="coloursContainer">
             <Title title="Premium Colours" />
             <div className="componentContainer">
-                <ColourComponent
-                    colours={cartItem}
-                    onAddToCart={addToCartHandler}
-                />
+                <ColourComponent onAddToCart={addToCartHandler} />
             </div>
             <div>
-                <div></div>
+                <CartItemsList colours={cartItem} />
             </div>
         </main>
     );
