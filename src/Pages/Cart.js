@@ -4,8 +4,13 @@ import "./Cart.css";
 const Cart = () => {
     return (
         <main className="cartContainer">
-            <Title title="My Cart" />
-            <div></div>
+            <div className="cart">
+                <div className="cartHeadingContainer">
+                    <Title title="My Cart" className="cartHeading" />
+                </div>
+                <div className="cartContentContainer"></div>
+                <div className="cartActionBar"></div>
+            </div>
         </main>
     );
 };
