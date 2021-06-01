@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import { colourData } from "./colourData";
 import Button from "./Button";
 import "./ColourComponent.css";
@@ -24,7 +25,9 @@ const TrendingColours = () => {
                         <p>€ {el.price}</p>
                     </div>
                 </div>
-                <Button style={styles} text="view colour" />
+                <Link exact to="/colours">
+                    <Button style={styles} text="view colours" />
+                </Link>
             </div>
         ));
 
