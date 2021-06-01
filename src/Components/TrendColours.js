@@ -9,7 +9,6 @@ const TrendingColours = () => {
 
     const styles = {
         backgroundColor: "#8DA2EB",
-        marginLeft: "auto",
     };
 
     const trendColItem = colours
@@ -25,7 +24,7 @@ const TrendingColours = () => {
                         <p>€ {el.price}</p>
                     </div>
                 </div>
-                <Link exact to="/colours">
+                <Link className="trendColButton" exact to="/colours">
                     <Button style={styles} text="view colours" />
                 </Link>
             </div>

@@ -81,3 +81,7 @@
     justify-content: space-between;
     /* padding-right: 3rem; */
 }
+
+.trendColButton {
+    margin-left: auto;
+}
