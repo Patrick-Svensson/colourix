@@ -1,0 +1,29 @@
+.banner {
+    width: 100vw;
+    height: 10vh;
+    background-color: #fdffa4;
+    margin-top: 10vh;
+}
+
+.bannerLink {
+    width: 100%;
+    height: 100%;
+}
+
+/* Screen breakpoint 1200px */
+
+@media screen and (max-width: 75rem) {
+    .banner {
+        height: 8vh;
+        margin-top: 8vh;
+    }
+}
+
+/* Screen breakpoint 784px */
+
+@media screen and (max-width: 49rem) {
+    .banner {
+        height: 4rem;
+        margin-top: 4rem;
+    }
+}
