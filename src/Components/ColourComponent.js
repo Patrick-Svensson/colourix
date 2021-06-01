@@ -6,10 +6,6 @@ import "./ColourComponent.css";
 
 const ColourComponent = () => {
     const [colours] = useState(colourData);
-    const [addToCartQuantity, setAddToCartQuantity] = useState("");
-    const [addToCartItem, setAddToCartItem] = useState("");
-
-    console.log(addToCartQuantity, addToCartItem); // TODO: Delete console.log
 
     const styles = {
         backgroundColor: "#EECC51",
@@ -31,26 +27,10 @@ const ColourComponent = () => {
             </div>
             <form className="selectMenu">
                 <label htmlFor="quantity">Quantity</label>
-                <input
-                    type="number"
-                    id="quantity"
-                    quantity={el.qty}
-                    value={addToCartQuantity}
-                    onChange={(event) => {
-                        setAddToCartQuantity(event.target.value);
-                    }}
-                />
+                <input type="number" id="quantity" />
             </form>
 
-            <Button
-                style={styles}
-                text="Add to cart"
-                key={el.id}
-                value={addToCartItem}
-                onClick={(event) => {
-                    setAddToCartItem(event.target.value);
-                }}
-            />
+            <Button style={styles} text="Add to cart" />
         </div>
     ));
 
