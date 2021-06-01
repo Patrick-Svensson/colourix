@@ -25,7 +25,7 @@
     font-size: clamp(2.6rem, 2.2rem + 2vw, 4rem);
     text-transform: uppercase;
     line-height: clamp(2.5rem, 2.2143rem + 1.4286vw, 3.5rem);
-    letter-spacing: 0.04rem;
+    letter-spacing: 0.06rem;
     font-weight: 400;
     font-style: italic;
 }
@@ -54,8 +54,9 @@
 
 .homeColHeading {
     font-size: clamp(1.6rem, 1.4rem + 0.8889vw, 2.2rem);
+    font-weight: 400;
     text-transform: uppercase;
-    letter-spacing: 0.02rem;
+    letter-spacing: 0.04rem;
     padding-bottom: 2rem;
 }
 
