@@ -12,7 +12,7 @@ const Home = () => {
                         <h1 className="homeHeaderHeading">
                             premium colours
                             <br></br>
-                            <span className="homeHeaderSubHeading">Made exclusivly with</span>
+                            <span className="homeHeaderSubHeading">Made exclusively with</span>
                             <br></br>
                             <span>green components</span>
                             <br></br>
