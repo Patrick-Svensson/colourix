@@ -2,6 +2,7 @@ import { useState } from "react";
 import { NavLink } from "react-router-dom";
 import { BiCart } from "react-icons/bi";
 import { ReactComponent as ReactLogo } from "./ColourixLogo.svg";
+import "./Navbar.css";
 
 const Navbar = () => {
     const [sidebar, setSidebar] = useState(false);
@@ -15,18 +16,8 @@ const Navbar = () => {
                     <ReactLogo className="logo" />
                 </NavLink>
             </div>
-            <div
-                className={
-                    sidebar ? "navLinkContainer active" : "navLinkContainer"
-                }
-            >
-                <NavLink
-                    className="navLink homeLink"
-                    activeClassName="activeHomeLink"
-                    exact
-                    to="/"
-                    onClick={showSidebar}
-                >
+            <div className={sidebar ? "navLinkContainer active" : "navLinkContainer"}>
+                <NavLink className="navLink homeLink" activeClassName="activeHomeLink" exact to="/" onClick={showSidebar}>
                     Home
                 </NavLink>
                 <NavLink
@@ -48,19 +39,11 @@ const Navbar = () => {
                     Contact
                 </NavLink>
             </div>
-            <NavLink
-                className="navLink cartLink"
-                activeClassName="activeCartLink"
-                exact
-                to="/cart"
-            >
+            <NavLink className="navLink cartLink" activeClassName="activeCartLink" exact to="/cart">
                 <BiCart className="cartIcon" />
             </NavLink>
             <div className="menuToggleContainer">
-                <div
-                    className={sidebar ? "menu__toggle active" : "menu__toggle"}
-                    onClick={showSidebar}
-                >
+                <div className={sidebar ? "menu__toggle active" : "menu__toggle"} onClick={showSidebar}>
                     <div className="bar"></div>
                     <div className="bar"></div>
                     <div className="bar"></div>
