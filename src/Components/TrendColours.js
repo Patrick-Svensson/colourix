@@ -8,6 +8,7 @@ const TrendingColours = () => {
 
     const styles = {
         backgroundColor: "#8DA2EB",
+        marginLeft: "auto",
     };
 
     const trendColItem = colours

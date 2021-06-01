@@ -12,11 +12,9 @@ const Home = () => {
                     <span className="homeHeaderSubHeading homeHeading">climate consious artist.</span>
                 </header>
                 <aside className="homeAside">
-                    <div className="trendColContainer">
-                        <h2 className="trendColHeading homeHeading">trending colours &#33;</h2>
-                        <div className="trendColours">
-                            <TrendingColour />
-                        </div>
+                    <h2 className="trendColHeading homeHeading">trending colours &#33;</h2>
+                    <div className="trendColours">
+                        <TrendingColour />
                     </div>
                 </aside>
             </div>
