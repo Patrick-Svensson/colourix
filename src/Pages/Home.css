@@ -1,3 +1,10 @@
+.banner {
+    width: 100vw;
+    height: 10vh;
+    background-color: #fdffa4;
+    margin-top: 10vh;
+}
+
 .home {
     width: 100vw;
     height: 100vh;
@@ -13,18 +20,12 @@
     height: 50%;
     display: flex;
     justify-content: space-between;
+    margin-bottom: 7rem;
 }
 
 .homeHeader {
     width: 60%;
     height: 100%;
-    display: flex;
-    flex-direction: column;
-}
-
-.homeHeading {
-    font-weight: 400;
-    font-style: italic;
 }
 
 .homeHeaderHeading {
@@ -32,13 +33,20 @@
     text-transform: uppercase;
     line-height: clamp(2.5rem, 2.2143rem + 1.4286vw, 3.5rem);
     letter-spacing: 0.04rem;
-    padding-bottom: 4rem;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.homeHeaderHeading > span {
+    font-size: clamp(1.6rem, 1.3143rem + 1.4286vw, 2.6rem);
+    line-height: clamp(2.5rem, 2.2143rem + 1.4286vw, 3.5rem);
+    text-transform: lowercase;
+    letter-spacing: 0.02rem;
 }
 
 .homeHeaderSubHeading {
-    font-size: clamp(1.6rem, 1.3143rem + 1.4286vw, 2.6rem);
-    line-height: clamp(2.5rem, 2.2143rem + 1.4286vw, 3.5rem);
-    letter-spacing: 0.02rem;
+    display: inline-block;
+    padding-top: 2rem;
 }
 
 .homeAside {
@@ -87,9 +95,14 @@
     margin-left: auto;
 }
 
-/* Screen breakpoint 1184px */
+/* Screen breakpoint 1200px */
 
-@media screen and (max-width: 65rem) {
+@media screen and (max-width: 75rem) {
+    .banner {
+        height: 8vh;
+        margin-top: 8vh;
+    }
+
     .home {
         height: 80rem;
     }
@@ -111,9 +124,14 @@
     }
 }
 
-/* Screen breakpoint 752px */
+/* Screen breakpoint 784px */
 
-@media screen and (max-width: 47rem) {
+@media screen and (max-width: 49rem) {
+    .banner {
+        height: 4rem;
+        margin-top: 4rem;
+    }
+
     .home {
         height: 70rem;
     }

@@ -1,24 +1,35 @@
+import { Link } from "react-router-dom";
 import TrendingColour from "../Components/TrendColours";
+import "./Home.css";
 
 const Home = () => {
     return (
-        <div className="home">
-            <div className="homeContentContainer">
-                <header className="homeHeader">
-                    <h1 className="homeHeaderHeading homeHeading">premium colours</h1>
-                    <span className="homeHeaderSubHeading homeHeading">Made exclusivly with</span>
-                    <span className="homeHeaderSubHeading homeHeading">green components</span>
-                    <span className="homeHeaderSubHeading homeHeading">for the modern,</span>
-                    <span className="homeHeaderSubHeading homeHeading">climate consious artist.</span>
-                </header>
-                <aside className="homeAside">
-                    <h2 className="trendColHeading homeHeading">trending colours &#33;</h2>
-                    <div className="trendColours">
-                        <TrendingColour />
-                    </div>
-                </aside>
+        <>
+            <div className="banner"></div>
+            <div className="home">
+                <div className="homeContentContainer">
+                    <header className="homeHeader">
+                        <h1 className="homeHeaderHeading">
+                            premium colours
+                            <br></br>
+                            <span className="homeHeaderSubHeading">Made exclusivly with</span>
+                            <br></br>
+                            <span>green components</span>
+                            <br></br>
+                            <span>for the modern,</span>
+                            <br></br>
+                            <span>climate consious artist.</span>
+                        </h1>
+                    </header>
+                    <aside className="homeAside">
+                        <h2 className="trendColHeading homeHeading">trending colours &#33;</h2>
+                        <div className="trendColours">
+                            <TrendingColour />
+                        </div>
+                    </aside>
+                </div>
             </div>
-        </div>
+        </>
     );
 };
 
