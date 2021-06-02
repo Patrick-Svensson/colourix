@@ -1,7 +1,8 @@
 .coloursHeading {
     color: #070707;
-    font-size: clamp(2rem, 1.3333rem + 2.963vw, 3rem);
+    font-size: clamp(2rem, 1.8rem + 0.8889vw, 2.6rem);
     font-weight: 400;
     text-transform: uppercase;
     font-style: italic;
+    letter-spacing: 0.08rem;
 }
