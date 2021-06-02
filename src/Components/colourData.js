@@ -9,9 +9,10 @@ export const colourData = [
     },
     {
         id: 2,
-        name: "forrest",
-        colour: "1D8133",
-        price: 24.85,
+        name: "ocean blue",
+        colour: "0869DA",
+        price: 33.65,
+
         volume: 50,
         qty: 0,
     },
@@ -25,9 +26,9 @@ export const colourData = [
     },
     {
         id: 4,
-        name: "ocean blue",
-        colour: "0869DA",
-        price: 33.65,
+        name: "forrest",
+        colour: "1D8133",
+        price: 24.85,
         volume: 50,
         qty: 0,
     },

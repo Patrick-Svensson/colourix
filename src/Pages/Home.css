@@ -1,0 +1,137 @@
+.home {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-y: scroll;
+}
+
+.homeContentContainer {
+    width: 100%;
+    height: 65%;
+    display: flex;
+    justify-content: center;
+}
+
+.homeContentWrapper {
+    width: 85%;
+    max-width: 75rem;
+    height: 80%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.homeHeader {
+    width: 60%;
+    height: 100%;
+}
+
+.homeHeaderHeading {
+    font-size: clamp(2.6rem, 2.2rem + 2vw, 4rem);
+    text-transform: uppercase;
+    line-height: clamp(2.5rem, 2.2143rem + 1.4286vw, 3.5rem);
+    letter-spacing: 0.06rem;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.homeHeaderHeading > span {
+    font-size: clamp(1.6rem, 1.4667rem + 0.5926vw, 2rem);
+    line-height: 2rem;
+    text-transform: lowercase;
+    letter-spacing: 0.02rem;
+}
+
+.homeHeaderSubHeading {
+    display: inline-block;
+    padding-top: 3rem;
+}
+
+.homeAside {
+    width: 29rem;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.homeColHeading {
+    font-size: clamp(1.6rem, 1.4rem + 0.8889vw, 2.2rem);
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 0.04rem;
+    padding-bottom: 2rem;
+}
+
+.homeColours {
+    width: 100%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding-right: 2rem;
+}
+
+/* Screen breakpoint 1200px */
+
+@media screen and (max-width: 75rem) {
+    .home {
+        height: 80rem;
+    }
+
+    .homeContentContainer {
+        height: 80%;
+    }
+
+    .homeContentWrapper {
+        width: 60%;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .homeHeader {
+        width: 100%;
+    }
+
+    .homeAside {
+        align-self: flex-end;
+    }
+}
+
+/* Screen breakpoint 784px */
+
+@media screen and (max-width: 49rem) {
+    .home {
+        height: 70rem;
+    }
+
+    .homeContentWrapper {
+        width: 80%;
+        height: 80%;
+    }
+}
+
+/* Screen breakpoint 544px */
+
+@media screen and (max-width: 34rem) {
+    .home {
+        padding-bottom: 2rem;
+    }
+
+    .homeContentWrapper {
+        height: 85%;
+    }
+
+    .homeAside {
+        width: 100%;
+        align-items: center;
+    }
+
+    .homeColours {
+        align-items: center;
+        padding: 0;
+    }
+}

@@ -7,7 +7,9 @@ import "./Colours.css";
 const Colours = () => {
     return (
         <main className="coloursContainer">
-            <Title title="Premium Colours" />
+            <div className="coloursTitleContainer">
+                <Title title="premium colours" />
+            </div>
             <div className="componentContainer">
                 <ColourComponent />
             </div>
