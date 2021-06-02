@@ -5,7 +5,7 @@ import Button from "./Button";
 import "./ColourComponent.css";
 
 const ColourComponent = () => {
-    const [colours, setColours] = useState(colourData);
+    const [colours] = useState(colourData);
 
     const styles = {
         backgroundColor: "#EECC51",
@@ -25,12 +25,10 @@ const ColourComponent = () => {
                     <p>€ {el.price}</p>
                 </div>
             </div>
-            <select className="selectMenu">
-                <option>1</option>
-                <option>2</option>
-                <option>3</option>
-                <option>4</option>
-            </select>
+            <form className="selectMenu">
+                <label htmlFor="quantity">Quantity</label>
+                <input type="number" id="quantity" />
+            </form>
 
             <Button style={styles} text="Add to cart" />
         </div>

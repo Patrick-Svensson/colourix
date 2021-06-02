@@ -39,4 +39,14 @@ const Cart = () => {
     );
 };
 
-export default Cart;
+
+//     return (
+//         <main className="cartContainer">
+//             <Title title="My Cart" />
+//             <ColourComponent addToCartItem={cartItem} />
+//             <div></div>
+//         </main>
+//     );
+// };
+
+// export default Cart;

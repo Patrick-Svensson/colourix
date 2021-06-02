@@ -1,4 +1,4 @@
-.cartContainer {
+/* .cartContainer {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -73,3 +73,4 @@
     height: 1.6rem;
     cursor: pointer;
 }
+
