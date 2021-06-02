@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import Button from "../Components/Button";
 import Title from "../Components/Title";
 import "./Cart.css";
@@ -25,7 +26,9 @@ const Cart = () => {
                     </div>
                     <div className="cartContentContainer"></div>
                     <div className="cartActionBar">
-                        <Button style={contShopBtnStyle} text="continue shopping" />
+                        <Link to="./colours">
+                            <Button style={contShopBtnStyle} text="continue shopping" />
+                        </Link>
                         <Button style={readTermsBtnStyle} text="read terms" />
                         <div className="cartCheckboxContainer">
                             <label className="cartCheckboxLabel">accept terms</label>
