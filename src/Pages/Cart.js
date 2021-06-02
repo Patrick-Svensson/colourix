@@ -2,7 +2,15 @@ import Button from "../Components/Button";
 import Title from "../Components/Title";
 import "./Cart.css";
 
-const Cart = () => {
+const Cart = (props) => {
+    const { cartItems, onAdd, onRemove } = props;
+    const itemsPrice = cartItems.reduce(
+        (accumulator, current) => accumulator + current.price * current.qty,
+        0
+    );
+
+    const totalPrice = itemsPrice;
+
     const contShopBtnStyle = {
         width: "11rem",
         backgroundColor: "#EECC51",
@@ -23,15 +31,78 @@ const Cart = () => {
                     <div className="cartHeadingContainer">
                         <Title title="my cart" />
                     </div>
-                    <div className="cartContentContainer"></div>
+                    <div className="cartContentContainer">
+                        <div>
+                            {cartItems.length === 0 && (
+                                <div className="cartCheckboxLabel text-center">
+                                    Cart is Empty
+                                </div>
+                            )}
+                        </div>
+                        {cartItems.map((item) => (
+                            <div key={item.id} className="row">
+                                <div
+                                    className="productImg"
+                                    style={{ background: "#" + item.colour }}
+                                ></div>
+                                <div className="cartCheckboxLabel">
+                                    {item.name}
+                                </div>
+                                <div>
+                                    <button
+                                        onClick={() => onAdd(item)}
+                                        className="add"
+                                    >
+                                        +
+                                    </button>
+                                    <button
+                                        onClick={() => onRemove(item)}
+                                        className="remove"
+                                    >
+                                        -
+                                    </button>
+                                </div>
+                                <div className="cartCheckboxLabel">
+                                    {item.qty}
+                                </div>
+                                <div className="cartCheckboxLabel flex-end">
+                                    € {item.price.toFixed(2)}
+                                </div>
+                            </div>
+                        ))}
+                        {cartItems.length !== 0 && (
+                            <>
+                                <hr></hr>
+                                <div className="row">
+                                    <div className="cartCheckboxLabel flex-end">
+                                        <strong>Total</strong>
+                                    </div>
+                                    <div className="cartCheckboxLabel flex-end span-3">
+                                        <strong>
+                                            € {totalPrice.toFixed(2)}
+                                        </strong>
+                                    </div>
+                                </div>
+                            </>
+                        )}
+                    </div>
                     <div className="cartActionBar">
-                        <Button style={contShopBtnStyle} text="continue shopping" />
+                        <Button
+                            style={contShopBtnStyle}
+                            text="continue shopping"
+                        />
                         <Button style={readTermsBtnStyle} text="read terms" />
                         <div className="cartCheckboxContainer">
-                            <label className="cartCheckboxLabel">accept terms</label>
+                            <label className="cartCheckboxLabel">
+                                accept terms
+                            </label>
                             <input type="checkbox" id="cartCheckbox" />
                         </div>
-                        <Button style={toCheckoutBtnStyle} text="to checkout" />
+                        <Button
+                            style={toCheckoutBtnStyle}
+                            text="to checkout"
+                            onClick={() => alert("Implement Checkout")}
+                        />
                     </div>
                 </div>
             </div>
@@ -39,14 +110,4 @@ const Cart = () => {
     );
 };
 
-
-//     return (
-//         <main className="cartContainer">
-//             <Title title="My Cart" />
-//             <ColourComponent addToCartItem={cartItem} />
-//             <div></div>
-//         </main>
-//     );
-// };
-
-// export default Cart;
+export default Cart;

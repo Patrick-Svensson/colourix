@@ -129,6 +129,15 @@ focus {
     font-size: 2.6rem;
 }
 
+.cartIcon-total {
+    text-align: center;
+    width: 3rem;
+    height: 3rem;
+    background-color: rgb(155, 42, 1);
+    border-radius: 50%;
+    color: #fff;
+}
+
 /* Screen breakpoint 1200px */
 @media screen and (max-width: 75rem) {
     .navbar {
