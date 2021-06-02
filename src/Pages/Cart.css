@@ -38,8 +38,7 @@
 
 .cartActionBar {
     width: 90%;
-    height: 5rem;
-    background-color: thistle;
+    height: 3rem;
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
@@ -53,9 +52,24 @@
     letter-spacing: 0.06rem;
 }
 
-.cartAcceptTerms {
+.cartCheckboxContainer {
     width: 15rem;
     height: auto;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+}
+
+.cartCheckboxLabel {
+    font-size: 1.6rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-style: italic;
+    letter-spacing: 0.02rem;
+}
+
+#cartCheckbox {
+    width: 1.6rem;
+    height: 1.6rem;
+    cursor: pointer;
 }
