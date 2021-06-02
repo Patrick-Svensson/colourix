@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import ColourComponent from "../Components/ColourComponent";
 
 import Title from "../Components/Title";
