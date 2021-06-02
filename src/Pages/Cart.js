@@ -74,10 +74,10 @@ const Cart = (props) => {
                             <>
                                 <hr></hr>
                                 <div className="row">
-                                    <div className="cartCheckboxLabel flex-end">
+                                    <div className="cartCheckboxLabel flex-end span-3">
                                         <strong>Total</strong>
                                     </div>
-                                    <div className="cartCheckboxLabel flex-end span-3">
+                                    <div className="cartCheckboxLabel flex-end span-2">
                                         <strong>
                                             € {totalPrice.toFixed(2)}
                                         </strong>
