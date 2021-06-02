@@ -38,9 +38,13 @@
     border-radius: 1rem;
 }
 
-.selectMenu {
-    width: 3rem;
-    border-radius: 0.2rem;
-    border: 1px solid #888;
+.selectMenu label,
+.selectMenu input {
+    display: block;
+    width: 4rem;
     padding: 2px;
+}
+
+.selectMenu input {
+    text-align: center;
 }

@@ -73,3 +73,34 @@
     height: 1.6rem;
     cursor: pointer;
 }
+
+.productImg {
+    width: 3rem;
+    height: 3rem;
+    border: 1px dotted #333;
+    border-radius: 1rem;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.row {
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr 1fr 1fr;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.span-3 {
+    grid-column: 1 / 4;
+}
+
+.span-2 {
+    grid-column: span 2;
+}
+
+.flex-end {
+    justify-self: flex-end;
+    margin-right: 0.5rem;
+}
