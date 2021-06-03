@@ -44,7 +44,7 @@ function App() {
             <Navbar countCartItems={cartItems.length} />
             <Switch>
                 <Route path={"/"} exact>
-                    <Home />
+                    <Home products={products} />
                 </Route>
                 <Route path={"/colours"} exact>
                     <Colours products={products} onAdd={onAdd} />

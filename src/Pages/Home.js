@@ -2,7 +2,9 @@ import TrendingColour from "../Components/TrendColours";
 import Banner from "../Components/Banner";
 import "./Home.css";
 
-const Home = () => {
+const Home = (props) => {
+    const { products } = props;
+
     return (
         <>
             <Banner />
@@ -13,7 +15,9 @@ const Home = () => {
                             <h1 className="homeHeaderHeading">
                                 premium colours
                                 <br></br>
-                                <span className="homeHeaderSubHeading">Made exclusively with</span>
+                                <span className="homeHeaderSubHeading">
+                                    Made exclusively with
+                                </span>
                                 <br></br>
                                 <span>green components</span>
                                 <br></br>
@@ -23,7 +27,9 @@ const Home = () => {
                             </h1>
                         </header>
                         <aside className="homeAside">
-                            <h2 className="homeColHeading homeHeading">trending colours &#33;</h2>
+                            <h2 className="homeColHeading homeHeading">
+                                trending colours &#33;
+                            </h2>
                             <div className="homeColours">
                                 <TrendingColour />
                             </div>
