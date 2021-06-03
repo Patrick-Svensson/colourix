@@ -6,11 +6,14 @@ import Modal from "../Components/Modal";
 import "./Cart.css";
 
 const Cart = (props) => {
+    /* Toggle terms modal. */
     const [termsClicked, setTermsClicked] = useState(false);
-
+    /* Activate checkout button when checkbox is checked. */
+    const [checked, setChecked] = useState(false);
+    const activateCheckOutBtn = () => setChecked(!checked);
     const { cartItems, onAdd, onRemove } = props;
     const itemsPrice = cartItems.reduce((accumulator, current) => accumulator + current.price * current.qty, 0);
-
+    const checkoutBtnAlert = () => alert("Implement Checkout");
     const totalPrice = itemsPrice;
 
     const contShopBtnStyle = {
@@ -22,9 +25,17 @@ const Cart = (props) => {
         backgroundColor: "#8DA2EB",
     };
 
-    const toCheckoutBtnStyle = {
+    const checkoutBtnInactiveStyle = {
+        backgroundColor: "#E7F4E5",
+        color: "#B5B5B5",
+    };
+
+    const checkoutBtnActiveStyle = {
         backgroundColor: "#9AEB8D",
     };
+
+    const checkoutBtnAlertHandler = checked ? checkoutBtnAlert : null;
+    const checkoutBtnStyleHandler = checked ? checkoutBtnActiveStyle : checkoutBtnInactiveStyle;
 
     const hideModal = {
         position: "fixed",
@@ -103,9 +114,9 @@ const Cart = (props) => {
                             <Button style={readTermsBtnStyle} text="read terms" onClick={() => setTermsClicked(true)} />
                             <div className="cartCheckboxContainer">
                                 <label className="cartCheckboxLabel">accept terms</label>
-                                <input type="checkbox" id="cartCheckbox" />
+                                <input type="checkbox" id="cartCheckbox" onClick={activateCheckOutBtn} />
                             </div>
-                            <Button style={toCheckoutBtnStyle} text="to checkout" onClick={() => alert("Implement Checkout")} />
+                            <Button style={checkoutBtnStyleHandler} text="to checkout" onClick={checkoutBtnAlertHandler} />
                         </div>
                     </div>
                 </div>
