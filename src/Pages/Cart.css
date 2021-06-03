@@ -67,17 +67,24 @@
 }
 
 .cartCheckboxLabel {
-    font-size: 1.6rem;
-    font-weight: 400;
-    text-transform: uppercase;
     font-style: italic;
-    letter-spacing: 0.02rem;
 }
 
 #cartCheckbox {
     width: 1.6rem;
     height: 1.6rem;
     cursor: pointer;
+}
+
+.cartColourComponent {
+    font-size: 1.6rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 0.02rem;
+}
+
+.cartColourPrice {
+    justify-self: flex-end;
 }
 
 .productImg {
@@ -98,17 +105,20 @@
     margin-bottom: 1rem;
 }
 
-.span-3 {
-    grid-column: 1 / 4;
-}
-
-.span-2 {
-    grid-column: span 2;
-}
-
-.flexEnd {
+.cartTotal {
+    font-size: 1.6rem;
     justify-self: flex-end;
-    margin-right: 0.5rem;
+    font-style: normal;
+    font-weight: 600;
+    letter-spacing: 0.02rem;
+}
+
+.cartTotalText {
+    grid-column: 3 / 4;
+}
+
+.cartTotalPrice {
+    grid-column: span 2;
 }
 
 /* Screen breakpoint 1200px */
@@ -123,8 +133,4 @@
     .cartContainer {
         padding-top: 4rem;
     }
-}
-
-/* Screen breakpoint 472px */
-@media screen and (max-width: 29.5rem) {
 }

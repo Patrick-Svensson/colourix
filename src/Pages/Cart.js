@@ -75,7 +75,7 @@ const Cart = (props) => {
                         </div>
                         <div className="cartContentContainer">
                             <div>
-                                {cartItems.length === 0 && <div className="cartCheckboxLabel textCenter">Cart is Empty!</div>}
+                                {cartItems.length === 0 && <div className="cartColourComponent textCenter">Cart is Empty!</div>}
                             </div>
                             {cartItems.map((item) => (
                                 <div key={item.id} className="row">
@@ -85,7 +85,7 @@ const Cart = (props) => {
                                             background: "#" + item.colour,
                                         }}
                                     ></div>
-                                    <div className="cartCheckboxLabel">{item.name}</div>
+                                    <div className="cartColourComponent">{item.name}</div>
                                     <div>
                                         <button onClick={() => onAdd(item)} className="add">
                                             +
@@ -94,19 +94,19 @@ const Cart = (props) => {
                                             -
                                         </button>
                                     </div>
-                                    <div className="cartCheckboxLabel">{item.qty}</div>
-                                    <div className="cartCheckboxLabel flexEnd">€ {item.price.toFixed(2)}</div>
+                                    <div className="cartColourComponent">{item.qty}</div>
+                                    <div className="cartColourComponent cartColourPrice">€&nbsp;{item.price.toFixed(2)}</div>
                                 </div>
                             ))}
                             {cartItems.length !== 0 && (
                                 <>
                                     <hr></hr>
                                     <div className="row">
-                                        <div className="cartCheckboxLabel flex-end span-3">
+                                        <div className="cartTotal cartTotalText">
                                             <strong>Total</strong>
                                         </div>
-                                        <div className="cartCheckboxLabel flex-end span-2">
-                                            <strong>€ {totalPrice.toFixed(2)}</strong>
+                                        <div className="cartTotal cartTotalPrice">
+                                            <strong>€&nbsp;{totalPrice.toFixed(2)}</strong>
                                         </div>
                                     </div>
                                 </>
@@ -118,7 +118,7 @@ const Cart = (props) => {
                             </Link>
                             <Button style={readTermsBtnStyle} text="read terms" onClick={() => setTermsClicked(true)} />
                             <div className="cartCheckboxContainer">
-                                <label className="cartCheckboxLabel">accept terms</label>
+                                <label className="cartColourComponent cartCheckboxLabel">accept terms</label>
                                 <input type="checkbox" id="cartCheckbox" onClick={activateCheckOutBtn} />
                             </div>
                             <Button style={checkoutBtnStyleHandler} text="to checkout" onClick={checkoutBtnAlertHandler} />
