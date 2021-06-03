@@ -20,9 +20,7 @@ const Home = (props) => {
                             <h1 className="homeHeaderHeading">
                                 premium colours
                                 <br></br>
-                                <span className="homeHeaderSubHeading">
-                                    Made exclusively with
-                                </span>
+                                <span className="homeHeaderSubHeading">Made exclusively with</span>
                                 <br></br>
                                 <span>green components</span>
                                 <br></br>
@@ -32,42 +30,28 @@ const Home = (props) => {
                             </h1>
                         </header>
                         <aside className="homeAside">
-                            <h2 className="homeColHeading homeHeading">
-                                trending colours &#33;
-                            </h2>
+                            <h2 className="homeColHeading homeHeading">trending colours &#33;</h2>
                             <div className="homeColours">
                                 {products
                                     .filter((product) => product.id < 3)
                                     .map((product) => (
-                                        <div
-                                            key={product.id}
-                                            className="colourItemContainer homeColItemContainer"
-                                        >
+                                        <div key={product.id} className="colourItemContainer homeColItemContainer">
                                             <div
                                                 className="productImg"
                                                 style={{
-                                                    background:
-                                                        "#" + product.colour,
+                                                    background: "#" + product.colour,
                                                 }}
                                             ></div>
                                             <div className="dataContainer">
-                                                <h3 className="productTitle">
-                                                    {product.name}
-                                                </h3>
+                                                <h3 className="productTitle">{product.name}</h3>
 
                                                 <div className="unitsContainer homeColUnitsContainer">
                                                     <p>{product.volume} ml</p>
                                                     <p>€ {product.price}</p>
                                                 </div>
                                             </div>
-                                            <Link
-                                                className="homeColButton"
-                                                to="/colours"
-                                            >
-                                                <Button
-                                                    style={styles}
-                                                    text="view colours"
-                                                />
+                                            <Link className="homeColButton" to="/colours">
+                                                <Button style={styles} text="view colours" />
                                             </Link>
                                         </div>
                                     ))}
