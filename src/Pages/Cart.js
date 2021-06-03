@@ -12,10 +12,7 @@ const Cart = (props) => {
     const [checked, setChecked] = useState(false);
     const activateCheckOutBtn = () => setChecked(!checked);
     const { cartItems, onAdd, onRemove } = props;
-    const itemsPrice = cartItems.reduce(
-        (accumulator, current) => accumulator + current.price * current.qty,
-        0
-    );
+    const itemsPrice = cartItems.reduce((accumulator, current) => accumulator + current.price * current.qty, 0);
     const checkoutBtnAlert = () => alert("Implement Checkout");
     const totalPrice = itemsPrice;
 
@@ -38,9 +35,7 @@ const Cart = (props) => {
     };
 
     const checkoutBtnAlertHandler = checked ? checkoutBtnAlert : null;
-    const checkoutBtnStyleHandler = checked
-        ? checkoutBtnActiveStyle
-        : checkoutBtnInactiveStyle;
+    const checkoutBtnStyleHandler = checked ? checkoutBtnActiveStyle : checkoutBtnInactiveStyle;
 
     const hideModal = {
         position: "fixed",
@@ -52,8 +47,7 @@ const Cart = (props) => {
         opacity: "0",
         visibility: "hidden",
         transform: "scale(1.1)",
-        transition:
-            "visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s",
+        transition: "visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s",
     };
 
     const showModal = {
@@ -66,8 +60,7 @@ const Cart = (props) => {
         opacity: "1",
         visibility: "visible",
         transform: "scale(1)",
-        transition:
-            "visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s",
+        transition: "visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s",
     };
 
     const modalHandler = termsClicked ? showModal : hideModal;
@@ -82,11 +75,7 @@ const Cart = (props) => {
                         </div>
                         <div className="cartContentContainer">
                             <div>
-                                {cartItems.length === 0 && (
-                                    <div className="cartCheckboxLabel textCenter">
-                                        Cart is Empty
-                                    </div>
-                                )}
+                                {cartItems.length === 0 && <div className="cartCheckboxLabel textCenter">Cart is Empty!</div>}
                             </div>
                             {cartItems.map((item) => (
                                 <div key={item.id} className="row">
@@ -96,29 +85,17 @@ const Cart = (props) => {
                                             background: "#" + item.colour,
                                         }}
                                     ></div>
-                                    <div className="cartCheckboxLabel">
-                                        {item.name}
-                                    </div>
+                                    <div className="cartCheckboxLabel">{item.name}</div>
                                     <div>
-                                        <button
-                                            onClick={() => onAdd(item)}
-                                            className="add"
-                                        >
+                                        <button onClick={() => onAdd(item)} className="add">
                                             +
                                         </button>
-                                        <button
-                                            onClick={() => onRemove(item)}
-                                            className="remove"
-                                        >
+                                        <button onClick={() => onRemove(item)} className="remove">
                                             -
                                         </button>
                                     </div>
-                                    <div className="cartCheckboxLabel">
-                                        {item.qty}
-                                    </div>
-                                    <div className="cartCheckboxLabel flexEnd">
-                                        € {item.price.toFixed(2)}
-                                    </div>
+                                    <div className="cartCheckboxLabel">{item.qty}</div>
+                                    <div className="cartCheckboxLabel flexEnd">€ {item.price.toFixed(2)}</div>
                                 </div>
                             ))}
                             {cartItems.length !== 0 && (
@@ -129,49 +106,27 @@ const Cart = (props) => {
                                             <strong>Total</strong>
                                         </div>
                                         <div className="cartCheckboxLabel flex-end span-2">
-                                            <strong>
-                                                € {totalPrice.toFixed(2)}
-                                            </strong>
+                                            <strong>€ {totalPrice.toFixed(2)}</strong>
                                         </div>
                                     </div>
                                 </>
                             )}
                         </div>
-                        <div className="cartActionBar">
+                        <div className={cartItems.length !== 0 ? "cartActionBar" : "cartActionBarHidden"}>
                             <Link to="./colours">
-                                <Button
-                                    style={contShopBtnStyle}
-                                    text="continue shopping"
-                                />
+                                <Button style={contShopBtnStyle} text="continue shopping" />
                             </Link>
-                            <Button
-                                style={readTermsBtnStyle}
-                                text="read terms"
-                                onClick={() => setTermsClicked(true)}
-                            />
+                            <Button style={readTermsBtnStyle} text="read terms" onClick={() => setTermsClicked(true)} />
                             <div className="cartCheckboxContainer">
-                                <label className="cartCheckboxLabel">
-                                    accept terms
-                                </label>
-                                <input
-                                    type="checkbox"
-                                    id="cartCheckbox"
-                                    onClick={activateCheckOutBtn}
-                                />
+                                <label className="cartCheckboxLabel">accept terms</label>
+                                <input type="checkbox" id="cartCheckbox" onClick={activateCheckOutBtn} />
                             </div>
-                            <Button
-                                style={checkoutBtnStyleHandler}
-                                text="to checkout"
-                                onClick={checkoutBtnAlertHandler}
-                            />
+                            <Button style={checkoutBtnStyleHandler} text="to checkout" onClick={checkoutBtnAlertHandler} />
                         </div>
                     </div>
                 </div>
             </main>
-            <Modal
-                modal={modalHandler}
-                onClick={() => setTermsClicked(false)}
-            />
+            <Modal modal={modalHandler} onClick={() => setTermsClicked(false)} />
         </>
     );
 };
