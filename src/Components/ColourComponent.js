@@ -1,4 +1,4 @@
-//import Button from "./Button";
+import Button from "./Button";
 import "./ColourComponent.css";
 
 const ColourComponent = (props) => {
@@ -10,10 +10,7 @@ const ColourComponent = (props) => {
 
     return (
         <div key={product.id} className="colourItemContainer">
-            <div
-                className="productImg"
-                style={{ background: "#" + product.colour }}
-            ></div>
+            <div className="productImg" style={{ background: "#" + product.colour }}></div>
             <div className="dataContainer">
                 <h3 className="productTitle">{product.name}</h3>
 
@@ -28,8 +25,7 @@ const ColourComponent = (props) => {
                 <input type="number" id="quantity" />
             </form> */}
 
-            {/* <Button style={styles} text="Add to cart" /> */}
-            <button onClick={() => onAdd(product)}>Add To Cart</button>
+            <Button style={styles} text="Add to cart" onClick={() => onAdd(product)} />
         </div>
     );
 };
