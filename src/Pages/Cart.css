@@ -80,7 +80,7 @@
     border-radius: 1rem;
 }
 
-.text-center {
+.textCenter {
     text-align: center;
 }
 
@@ -99,14 +99,14 @@
     grid-column: span 2;
 }
 
-.flex-end {
+.flexEnd {
     justify-self: flex-end;
     margin-right: 0.5rem;
 }
 
 /* ***** Modal ***** */
 
-.modal-container {
+.modalContainer {
     position: fixed;
     left: 0;
     top: 0;
@@ -133,7 +133,7 @@
     align-items: center;
 }
 
-.modal__content {
+.modalContent {
     width: 85%;
     height: 65%;
     background-color: rgb(228, 228, 228);
@@ -142,7 +142,7 @@
     padding: 3rem;
 }
 
-.modal__X-wrapper {
+.modalXWrapper {
     display: flex;
     justify-content: center;
     align-self: flex-end;
@@ -158,20 +158,20 @@
     background-color: rgb(228, 228, 228);
 }
 
-.modal__X-wrapper:hover {
+.modalXWrapper:hover {
     background-color: rgb(206, 206, 206);
 }
 
-.modal__X {
+.modalX {
     font-size: 4rem;
     color: rgb(34, 34, 34);
 }
 
-.modal__heading {
+.modalHeading {
     margin-bottom: 2rem;
 }
 
-.modal__text {
+.modalText {
     text-transform: initial;
 }
 

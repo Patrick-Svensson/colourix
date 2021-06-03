@@ -35,7 +35,7 @@ const Cart = (props) => {
                         </div>
                         <div className="cartContentContainer">
                             <div>
-                                {cartItems.length === 0 && <div className="cartCheckboxLabel text-center">Cart is Empty</div>}
+                                {cartItems.length === 0 && <div className="cartCheckboxLabel textCenter">Cart is Empty</div>}
                             </div>
                             {cartItems.map((item) => (
                                 <div key={item.id} className="row">
@@ -50,7 +50,7 @@ const Cart = (props) => {
                                         </button>
                                     </div>
                                     <div className="cartCheckboxLabel">{item.qty}</div>
-                                    <div className="cartCheckboxLabel flex-end">€ {item.price.toFixed(2)}</div>
+                                    <div className="cartCheckboxLabel flexEnd">€ {item.price.toFixed(2)}</div>
                                 </div>
                             ))}
                             {cartItems.length !== 0 && (
@@ -82,14 +82,14 @@ const Cart = (props) => {
                 </div>
             </main>
             {/* ***** Modal ***** */}
-            <div className={termsClicked ? "modal-container ActivateModalContainer" : "modal-container"}>
+            <div className={termsClicked ? "modalContainer ActivateModalContainer" : "modalContainer"}>
                 <div className="modal">
-                    <div className="modal__X-wrapper" onClick={() => setTermsClicked(false)}>
-                        <span className="modal__X">&#215;</span>
+                    <div className="modalXWrapper" onClick={() => setTermsClicked(false)}>
+                        <span className="modalX">&#215;</span>
                     </div>
-                    <h2 className="modal__heading">Terms and Conditions</h2>
-                    <div className="modal__content">
-                        <p className="modal__text">
+                    <h2 className="modalHeading">Terms and Conditions</h2>
+                    <div className="modalContent">
+                        <p className="modalText">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam finibus arcu ut pulvinar dignissim.
                             Praesent maximus, mi in tristique aliquet, urna arcu semper purus, ut ornare nunc ipsum ac ex. Duis ut
                             molestie lorem. Donec a lectus quis purus fermentum pulvinar. Sed nec ex tellus. Aenean in sem
@@ -98,7 +98,7 @@ const Cart = (props) => {
                             condimentum aliquam egestas.
                         </p>
                         <br />
-                        <p className="modal__text">
+                        <p className="modalText">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam finibus arcu ut pulvinar dignissim.
                             Praesent maximus, mi in tristique aliquet, urna arcu semper purus, ut ornare nunc ipsum ac ex. Duis ut
                             molestie lorem. Donec a lectus quis purus fermentum pulvinar. Sed nec ex tellus. Aenean in sem
@@ -113,7 +113,7 @@ const Cart = (props) => {
                             netus et malesuada fames ac turpis egestas.
                         </p>
                         <br />
-                        <p className="modal__text">
+                        <p className="modalText">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam finibus arcu ut pulvinar dignissim.
                             Praesent maximus, mi in tristique aliquet, urna arcu semper purus, ut ornare nunc ipsum ac ex. Duis ut
                             molestie lorem. Donec a lectus quis purus fermentum pulvinar. Sed nec ex tellus. Aenean in sem
