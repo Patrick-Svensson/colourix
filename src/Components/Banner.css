@@ -15,6 +15,10 @@
     margin-top: 10vh;
 }
 
+.banner:hover {
+    background-color: #e7e98b;
+}
+
 .bannerContent {
     width: 90%;
     display: flex;

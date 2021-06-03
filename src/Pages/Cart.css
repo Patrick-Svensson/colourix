@@ -80,7 +80,7 @@
     border-radius: 1rem;
 }
 
-.text-center {
+.textCenter {
     text-align: center;
 }
 
@@ -99,7 +99,7 @@
     grid-column: span 2;
 }
 
-.flex-end {
+.flexEnd {
     justify-self: flex-end;
     margin-right: 0.5rem;
 }

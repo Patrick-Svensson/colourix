@@ -19,11 +19,7 @@ function App() {
     const onAdd = (product) => {
         const exist = cartItems.find((el) => el.id === product.id);
         if (exist) {
-            setCartItems(
-                cartItems.map((el) =>
-                    el.id === product.id ? { ...exist, qty: exist.qty + 1 } : el
-                )
-            );
+            setCartItems(cartItems.map((el) => (el.id === product.id ? { ...exist, qty: exist.qty + 1 } : el)));
         } else {
             setCartItems([...cartItems, { ...product, qty: 1 }]);
         }
@@ -37,11 +33,7 @@ function App() {
         if (exist.qty === 1) {
             setCartItems(cartItems.filter((el) => el.id !== product.id));
         } else {
-            setCartItems(
-                cartItems.map((el) =>
-                    el.id === product.id ? { ...exist, qty: exist.qty - 1 } : el
-                )
-            );
+            setCartItems(cartItems.map((el) => (el.id === product.id ? { ...exist, qty: exist.qty - 1 } : el)));
         }
     };
 
@@ -59,11 +51,7 @@ function App() {
                     <Contact />
                 </Route>
                 <Route path={"/cart"} exact>
-                    <Cart
-                        cartItems={cartItems}
-                        onAdd={onAdd}
-                        onRemove={onRemove}
-                    />
+                    <Cart cartItems={cartItems} onAdd={onAdd} onRemove={onRemove} />
                 </Route>
             </Switch>
             <Footer />

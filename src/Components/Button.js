@@ -5,8 +5,8 @@ const Button = (props) => {
         <>
             <button
                 style={props.style}
-                className="button"
                 onClick={props.onClick}
+                className="button"
             >
                 {props.text}
             </button>
