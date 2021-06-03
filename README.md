@@ -55,7 +55,8 @@ Reusable components - how to build reusable multi-functional components througho
 
 ### Continued development
 
-Extend the web application to collect data from Api instead of a hard-coded data file. Further, develop the checkout to include tax and shipping cost, and collect user information for shipping. Implement a possibility for client registration and a user login section with password verification. Form e-mail verification. Furthermore, to implement semantic markup and address accessibility issues.
+Continue improving responsive design for smaller screens.
+Extend the web application to collect data from Api instead of a hard-coded data file. Further, develop the checkout to include tax and shipping cost, and collect user information for shipping. Implement a possibility for client registration and a user login section with password verification. Form e-mail verification. Furthermore, to implement semantic markup, SEO and address accessibility issues.
 
 ## Author
 
