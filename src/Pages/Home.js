@@ -37,7 +37,7 @@ const Home = (props) => {
                                     .map((product) => (
                                         <div key={product.id} className="colourItemContainer homeColItemContainer">
                                             <div
-                                                className="productImg"
+                                                className="productImg homeProductImg"
                                                 style={{
                                                     background: "#" + product.colour,
                                                 }}

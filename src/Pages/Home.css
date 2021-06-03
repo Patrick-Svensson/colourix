@@ -75,6 +75,10 @@
     padding-right: 2rem;
 }
 
+.homeProductImg:hover {
+    transform: none;
+}
+
 .homeColItemContainer {
     width: 20rem;
     margin: 0;
