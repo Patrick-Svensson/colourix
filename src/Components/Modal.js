@@ -40,7 +40,6 @@ const Modal = (props) => {
                     </p>
                 </div>
             </div>
-            //{" "}
         </div>
     );
 };
