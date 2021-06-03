@@ -3,44 +3,47 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
     overflow-y: scroll;
+    padding: 10vh 0 7rem 0;
 }
 
 .cartWrapper {
     width: 100%;
-    height: 70%;
+    height: 90%;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 .cart {
     width: 90%;
     max-width: 75rem;
-    height: 92%;
+    height: 90%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    gap: 2rem;
     align-items: center;
+    margin: 2rem 0 4rem 0;
 }
 
 .cartHeadingContainer {
     width: auto;
-    height: auto;
     align-self: flex-start;
 }
 
 .cartContentContainer {
     width: 90%;
-    height: 60%;
+    height: auto;
 }
 
 .cartActionBar {
     width: 90%;
-    height: 3rem;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
-    align-items: flex-end;
+    gap: 1rem;
 }
 
 .cartHeading {
@@ -56,7 +59,6 @@
     height: auto;
     display: flex;
     justify-content: space-between;
-    align-items: center;
 }
 
 .cartCheckboxLabel {
@@ -102,4 +104,22 @@
 .flexEnd {
     justify-self: flex-end;
     margin-right: 0.5rem;
+}
+
+/* Screen breakpoint 1200px */
+@media screen and (max-width: 75rem) {
+    .cartContainer {
+        padding-top: 8vh;
+    }
+}
+
+/* Screen breakpoint 784px */
+@media screen and (max-width: 49rem) {
+    .cartContainer {
+        padding-top: 4rem;
+    }
+}
+
+/* Screen breakpoint 472px */
+@media screen and (max-width: 29.5rem) {
 }
