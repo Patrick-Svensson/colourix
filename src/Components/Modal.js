@@ -1,4 +1,3 @@
-import { useState } from "react";
 import "./Modal.css";
 
 const Modal = (props) => {
@@ -41,7 +40,6 @@ const Modal = (props) => {
                     </p>
                 </div>
             </div>
-            //{" "}
         </div>
     );
 };
