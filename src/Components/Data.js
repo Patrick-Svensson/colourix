@@ -32,7 +32,7 @@ const data = {
             id: 5,
             name: "bougainvillea",
             colour: "802DC1",
-            price: 21.95,
+            price: 8.78,
             volume: 50,
         },
         {

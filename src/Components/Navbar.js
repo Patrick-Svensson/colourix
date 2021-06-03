@@ -58,7 +58,7 @@ const Navbar = (props) => {
             >
                 <BiCart className="cartIcon" />{" "}
                 {countCartItems ? (
-                    <button className="cartIcon-total">{countCartItems}</button>
+                    <div className="cartIcon-total">{countCartItems}</div>
                 ) : (
                     ""
                 )}

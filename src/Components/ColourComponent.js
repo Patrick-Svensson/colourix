@@ -20,7 +20,11 @@ const ColourComponent = (props) => {
 
                 <div className="unitsContainer">
                     <p>{product.volume} ml</p>
-                    <p>€ {product.price}</p>
+                    {product.id === 5 ? (
+                        <p className="reducedPrice">€ {product.price}</p>
+                    ) : (
+                        <p>€ {product.price}</p>
+                    )}
                 </div>
             </div>
             <Button
