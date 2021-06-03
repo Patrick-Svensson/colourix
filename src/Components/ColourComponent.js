@@ -1,9 +1,10 @@
-//import Button from "./Button";
+import Button from "./Button";
 import "./ColourComponent.css";
 
 const ColourComponent = (props) => {
     const { product, onAdd } = props;
 
+    // Button component styling for addToCart button
     const styles = {
         backgroundColor: "#EECC51",
     };
@@ -22,14 +23,11 @@ const ColourComponent = (props) => {
                     <p>€ {product.price}</p>
                 </div>
             </div>
-
-            {/* <form className="selectMenu">
-                <label htmlFor="quantity">Quantity</label>
-                <input type="number" id="quantity" />
-            </form> */}
-
-            {/* <Button style={styles} text="Add to cart" /> */}
-            <button onClick={() => onAdd(product)}>Add To Cart</button>
+            <Button
+                style={styles}
+                text="Add to cart"
+                onClick={() => onAdd(product)}
+            />
         </div>
     );
 };
