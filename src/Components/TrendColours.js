@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom";
 import Button from "./Button";
-import "./ColourComponent.css";
 import "./TrendColours.css";
 
 const TrendingColours = (props) => {
@@ -10,20 +9,20 @@ const TrendingColours = (props) => {
         backgroundColor: "#8DA2EB",
     };
 
-    const trendColItem = () => {
+    const trendColItem = () =>
         product
-            .filter((el) => el.id < 3)
+            .find((el) => el.id < 3)
             .map((el) => (
                 <div
                     key={el.id}
                     className="colourItemContainer trendColItemContainer"
                 >
                     <div
-                        className="productImg"
+                        className="elImg"
                         style={{ background: "#" + el.colour }}
                     ></div>
                     <div className="dataContainer">
-                        <h3 className="productTitle">{el.name}</h3>
+                        <h3 className="elTitle">{el.name}</h3>
 
                         <div className="unitsContainer trendColUnitsContainer">
                             <p>{el.volume} ml</p>
@@ -35,7 +34,6 @@ const TrendingColours = (props) => {
                     </Link>
                 </div>
             ));
-    };
 
     return <>{trendColItem}</>;
 };

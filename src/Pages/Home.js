@@ -31,7 +31,12 @@ const Home = (props) => {
                                 trending colours &#33;
                             </h2>
                             <div className="homeColours">
-                                <TrendingColour />
+                                {products.map((product) => (
+                                    <TrendingColour
+                                        key={product.id}
+                                        product={product}
+                                    />
+                                ))}
                             </div>
                         </aside>
                     </div>
