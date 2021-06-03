@@ -19,12 +19,6 @@ const ColourComponent = (props) => {
                     <p>€ {product.price}</p>
                 </div>
             </div>
-
-            {/* <form className="selectMenu">
-                <label htmlFor="quantity">Quantity</label>
-                <input type="number" id="quantity" />
-            </form> */}
-
             <Button style={styles} text="Add to cart" onClick={() => onAdd(product)} />
         </div>
     );

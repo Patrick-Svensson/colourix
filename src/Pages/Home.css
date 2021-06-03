@@ -75,6 +75,25 @@
     padding-right: 2rem;
 }
 
+.homeColItemContainer {
+    width: 20rem;
+    margin: 0;
+}
+
+.homeColItemContainer:last-child {
+    align-self: flex-start;
+}
+
+.homeColUnitsContainer {
+    width: 100%;
+    justify-content: space-between;
+    /* padding-right: 3rem; */
+}
+
+.homeColButton {
+    margin-left: auto;
+}
+
 /* Screen breakpoint 1200px */
 
 @media screen and (max-width: 75rem) {
@@ -133,5 +152,9 @@
     .homeColours {
         align-items: center;
         padding: 0;
+    }
+
+    .homeColItemContainer:last-child {
+        align-self: center;
     }
 }
