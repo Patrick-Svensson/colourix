@@ -34,8 +34,14 @@
 .productImg {
     width: 4rem;
     height: 4rem;
-    border: 1px dotted #333;
-    border-radius: 1rem;
+    border: 1px solid #070707 !important;
+    border-radius: 0.5rem;
+    transition: all 0.2s ease-in-out;
+}
+
+.productImg:hover {
+    cursor: pointer;
+    transform: translateX(4rem) scale(4);
 }
 
 .selectMenu label,

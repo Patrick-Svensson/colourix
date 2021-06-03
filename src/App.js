@@ -13,6 +13,9 @@ function App() {
     const { products } = data;
     const [cartItems, setCartItems] = useState([]);
 
+    // Add product to cart functionality by
+    // first checking matching id, if product already exist, add on one product to cart
+    // if product don't exist add product to cart
     const onAdd = (product) => {
         const exist = cartItems.find((el) => el.id === product.id);
         if (exist) {
@@ -22,6 +25,9 @@ function App() {
         }
     };
 
+    // Remove product from cart functionality by
+    // first checking if product already exist by compairing matching id, then remove product from cart
+    // if multiple products exist, remove one product from cart
     const onRemove = (product) => {
         const exist = cartItems.find((el) => el.id === product.id);
         if (exist.qty === 1) {
