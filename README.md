@@ -1,9 +1,9 @@
 # Colourix
 
-This is an student colloboration assignment during studies with Sundsgarden Folkhogskola IT-programming.
+This is a student colloboration assignment during studies with Sundsgarden Folkhogskola IT-programming.<br>
 Heba Sadlah - Contact page<br>
-Patrick Svensson - Home page, navbar, footer, banner and wireframes<br>
-Helena Plantin - Shopping page and checkout, reusable components and README
+Patrick Svensson - Home page, navbar, footer, banner, action-bar and wireframes<br>
+Helena Plantin - Git, shopping page and checkout, reusable components and README
 
 ## Table of contents
 
@@ -64,4 +64,4 @@ Heba Sadlah, Patrick Svensson, Helena Plantin
 
 ## Acknowledgments
 
-Hamil Patel React Hooks youTube tutorial for React Hooks. Basir Jafarzadeh for a clear description of how to implement child to parent data flow and state-handling in a React application. Scrimba React tutorial on forms and its best practises.
+Hamil Patel React Hooks tutorial for React Hooks. Basir Jafarzadeh for a clear description of how to implement child to parent data flow and state-handling in a React application. Scrimba React tutorial on forms and best practises.

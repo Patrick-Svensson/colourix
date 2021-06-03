@@ -23,7 +23,7 @@ const data = {
         },
         {
             id: 4,
-            name: "forrest",
+            name: "deep forrest",
             colour: "1D8133",
             price: 24.85,
             volume: 50,
