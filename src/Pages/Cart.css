@@ -77,9 +77,9 @@
 }
 
 .cartColourComponent {
-    font-size: 1.6rem;
+    font-size: clamp(1rem, 0.8rem + 0.8889vw, 1.6rem);
     font-weight: 400;
-    text-transform: uppercase;
+    text-transform: capitalize;
     letter-spacing: 0.02rem;
 }
 
@@ -100,13 +100,13 @@
 
 .row {
     display: grid;
-    grid-template-columns: 1fr 4fr 1fr 1fr 1fr;
+    grid-template-columns: 2fr 4fr 1fr 1fr 1fr;
     justify-content: space-between;
     margin-bottom: 1rem;
 }
 
 .cartTotal {
-    font-size: 1.6rem;
+    font-size: clamp(1rem, 0.8rem + 0.8889vw, 1.6rem);
     justify-self: flex-end;
     font-style: normal;
     font-weight: 600;
