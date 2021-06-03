@@ -60,6 +60,9 @@
 }
 
 .reducedPrice {
+    text-align: center;
+    width: 7rem;
+    height: 2.6rem;
     background-color: #eb8d8d;
     padding: 0.2rem 0.8rem;
     border-radius: 0.3rem;

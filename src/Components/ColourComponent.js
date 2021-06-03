@@ -19,11 +19,11 @@ const ColourComponent = (props) => {
                 <h3 className="productTitle">{product.name}</h3>
 
                 <div className="unitsContainer">
-                    <p>{product.volume} ml</p>
+                    <p>{product.volume}&nbsp;ml</p>
                     {product.id === 5 ? (
-                        <p className="reducedPrice">€ {product.price}</p>
+                        <p className="reducedPrice">€&nbsp;{product.price}</p>
                     ) : (
-                        <p>€ {product.price}</p>
+                        <p>€&nbsp;{product.price}</p>
                     )}
                 </div>
             </div>
