@@ -1,0 +1,86 @@
+.wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    margin-top: 6vh;
+   
+}
+
+
+.adress {
+    display: flex;
+    justify-content: center;
+    flex: 1;
+    
+  
+}
+
+.contact-form {
+    margin-top: 10vh;
+    display: flex;
+    flex-direction: column;
+    flex: 3;
+   
+}
+
+form {
+   
+    width: 75%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    
+   }
+
+   label {
+      display: flex;
+       flex: 1;
+       justify-content: center;
+       align-content: space-between;
+       height: 3rem;
+          
+   }
+    input {
+        flex: 2;
+       
+    }
+
+     .text-s{
+      
+     
+     
+    }
+
+
+
+
+    @media screen and (max-width: 35rem) {
+        .wrapper {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            flex-wrap: wrap;
+            margin-top: 9vh;
+           
+        }
+           .contact-form {
+            display: flex;
+            flex-direction: column; 
+            justify-content: end; 
+            align-items: center;      
+           
+        }
+
+        .contact-form {
+            margin-top: 5vh;
+            display: flex;
+            flex-direction: column;
+         
+        }
+        
+        
+    }
+

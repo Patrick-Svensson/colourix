@@ -8,19 +8,34 @@ import "./Contact.css"
 
 const Contact = () => {
     return <div className="contact">
-        <Title />
-        <form className="form">
-            <input type="text" />
-            <br />
 
+        <div className="wrapper">
+            <div className="adress">
+                <Title title="Contact" />
+            </div>
 
-            <input type="text" />
+            <div className="contact-form">
+                <form action="" class="form">
+                    <label for="">First Name</label>
+                    <input type="text" />
+                </form>
 
-            <input type="text" />
+                <form action="" class="form">
+                    <label for="">Last Name</label>
+                    <input type="text" />
+                </form>
 
-            <input type="text" />
+                <form action="" class="form">
+                    <label for="">Email </label>
+                    <input type="text" />
+                </form>
 
-        </form>
+                <form action="" class="form">
+                    <label for="">Masseg</label>
+                    <input type="text" />
+                </form>
+            </div>
+        </div>
     </div>;
 };
 
