@@ -17,7 +17,7 @@ const ColourComponent = (props) => {
             ></div>
             <div className="dataContainer">
                 <h3 className="productTitle">{product.name}</h3>
-
+                {/* Conditionallly checks if item is reduced price item, then change style */}
                 <div className="unitsContainer">
                     <p>{product.volume}&nbsp;ml</p>
                     {product.id === 5 ? (

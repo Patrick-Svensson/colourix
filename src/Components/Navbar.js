@@ -56,6 +56,7 @@ const Navbar = (props) => {
                 exact
                 to="/cart"
             >
+                {/* If items in cart then show number of products */}
                 <BiCart className="cartIcon" />{" "}
                 {countCartItems ? (
                     <div className="cartIcon-total">{countCartItems}</div>
