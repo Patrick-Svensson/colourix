@@ -24,21 +24,21 @@ const Contact = () => {
                         <label className="cartContact label" for="">
                             First Name
                         </label>
-                        <input type="text" />
+                        <input type="text" className="input" />
                     </form>
 
                     <form action="" class="form">
                         <label className="cartContact label" for="">
                             Last Name
                         </label>
-                        <input type="text" />
+                        <input type="text" className="input" />
                     </form>
 
                     <form action="" class="form">
                         <label className="cartContact label" for="">
                             Email{" "}
                         </label>
-                        <input type="text" />
+                        <input type="text" className="input" />
                     </form>
 
                     <form action="" class="form">
