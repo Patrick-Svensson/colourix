@@ -1,9 +1,11 @@
 .contact {
     width: 90%;
+    margin: auto;
 }
 
 .wrapper {
     margin-top: 10vh;
+
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -20,14 +22,11 @@
 }
 
 .contact-form {
-    width: 68%;
+    width: 100%;
+    max-width: 40rem;
     margin-top: 4rem;
     height: 30rem;
     align-content: center;
-}
-
-input {
-    width: 48%;
 }
 
 form {
@@ -35,11 +34,9 @@ form {
     align-items: flex-start;
     margin-top: 1rem;
 }
-.label {
-    width: 20%;
-}
+
 textarea {
-    width: 48%;
+    flex: 2;
     height: 15rem;
 }
 .cartContact {
@@ -89,10 +86,10 @@ textarea {
         align-items: center;
     }
 
-    textarea {
+    /* textarea {
         width: 50%;
         height: 5rem;
-    }
+    } */
 
     .btn-knapp {
         display: flex;
@@ -107,18 +104,15 @@ textarea {
     }
 }
 
-label {
+.label {
     display: flex;
     flex: 1;
     justify-content: center;
     align-content: space-between;
     height: 3rem;
 }
-input {
+.input {
     flex: 2;
-}
-
-.text-s {
 }
 
 @media screen and (max-width: 35rem) {
