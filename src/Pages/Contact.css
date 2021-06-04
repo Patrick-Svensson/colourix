@@ -1,32 +1,135 @@
 .wrapper {
+    margin-top: 10vh;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     flex-direction: row;
-    margin-top: 6vh;
+    gap: 20px;
 }
 
 .adress {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    
+}
+
+
+.contact-form {
+    width: 68%;
+    margin-top: 4rem;
+    height: 30rem;
+    align-content: center;
+   
+ }
+
+input {
+    width: 48%;
+}
+
+form{
+    display: flex;
+    align-items: flex-start;
+    margin-top: 1rem;
+}
+label{
+    width: 20%;
+}
+textarea {
+    width: 48%;
+    height: 15rem;
+}
+.cartContact {
+    font-size: clamp(1rem, 0.6667rem + 1.4815vw, 2rem);
+    font-weight: 400; 
+    font-style: italic;
+    letter-spacing: 0.06rem;
+}
+
+
+
+.btn-knapp {
+    display: flex;
+    justify-content: space-between;
+    width: 78%;
+  
+}
+
+.btn-clear {
+    display: flex;
+    width: 67%;
+    justify-content: flex-end;
+}
+
+
+
+
+
+@media screen and (max-width: 53rem) {
+    .wrapper {
+        margin-top: 10vh;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-direction: column;
+      
+    }
+
+    
+
+.adress {
+  
     display: flex;
     justify-content: center;
     flex: 1;
+
 }
+
 
 .contact-form {
-    margin-top: 10vh;
     display: flex;
     flex-direction: column;
-    flex: 3;
+
+    align-content: flex-start;
+   
+ }
+ 
+form{
+ 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
 }
 
-form {
-    width: 75%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
+
+textarea {
+    width: 50%;
+    height: 5rem;
 }
+
+.btn-knapp {
+    display: flex;
+    justify-content: space-between;
+    width: 78%;
+  
+  
+}
+
+.btn-clear {
+    display: flex;
+    width: 50%;
+    justify-content: flex-end;
+}
+
+
+    
+}
+
+
+
 
 label {
     display: flex;
