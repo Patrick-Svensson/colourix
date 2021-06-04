@@ -49,12 +49,12 @@ textarea {
 .btn-knapp {
     display: flex;
     justify-content: space-between;
-    width: 78%;
+    width: 99%;
 }
 
 .btn-clear {
     display: flex;
-    width: 67%;
+    width: 85%;
     justify-content: flex-end;
 }
 
