@@ -1,3 +1,7 @@
+.contact {
+    width: 90%;
+}
+
 .wrapper {
     margin-top: 10vh;
     display: flex;
@@ -13,28 +17,25 @@
     display: flex;
     justify-content: center;
     align-self: center;
-    
 }
-
 
 .contact-form {
     width: 68%;
     margin-top: 4rem;
     height: 30rem;
     align-content: center;
-   
- }
+}
 
 input {
     width: 48%;
 }
 
-form{
+form {
     display: flex;
     align-items: flex-start;
     margin-top: 1rem;
 }
-label{
+.label {
     width: 20%;
 }
 textarea {
@@ -43,18 +44,15 @@ textarea {
 }
 .cartContact {
     font-size: clamp(1rem, 0.6667rem + 1.4815vw, 2rem);
-    font-weight: 400; 
+    font-weight: 400;
     font-style: italic;
     letter-spacing: 0.06rem;
 }
-
-
 
 .btn-knapp {
     display: flex;
     justify-content: space-between;
     width: 78%;
-  
 }
 
 .btn-clear {
@@ -63,10 +61,6 @@ textarea {
     justify-content: flex-end;
 }
 
-
-
-
-
 @media screen and (max-width: 53rem) {
     .wrapper {
         margin-top: 10vh;
@@ -74,62 +68,44 @@ textarea {
         justify-content: flex-start;
         align-items: center;
         flex-direction: column;
-      
     }
 
-    
+    .adress {
+        display: flex;
+        justify-content: center;
+        flex: 1;
+    }
 
-.adress {
-  
-    display: flex;
-    justify-content: center;
-    flex: 1;
+    .contact-form {
+        display: flex;
+        flex-direction: column;
 
+        align-content: flex-start;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    textarea {
+        width: 50%;
+        height: 5rem;
+    }
+
+    .btn-knapp {
+        display: flex;
+        justify-content: space-between;
+        width: 78%;
+    }
+
+    .btn-clear {
+        display: flex;
+        width: 50%;
+        justify-content: flex-end;
+    }
 }
-
-
-.contact-form {
-    display: flex;
-    flex-direction: column;
-
-    align-content: flex-start;
-   
- }
- 
-form{
- 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  
-}
-
-
-textarea {
-    width: 50%;
-    height: 5rem;
-}
-
-.btn-knapp {
-    display: flex;
-    justify-content: space-between;
-    width: 78%;
-  
-  
-}
-
-.btn-clear {
-    display: flex;
-    width: 50%;
-    justify-content: flex-end;
-}
-
-
-    
-}
-
-
-
 
 label {
     display: flex;
